@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+   · blog-thành đạt
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Đỗ Thành Đạt">
+<meta name="description" content="
+  Quản Lý Bộ Nhớ và Garbage Collection trong Java
+  
+    
+    Link to heading
+  
+
+Trong Java, việc quản lý bộ nhớ là một phần quan trọng để đảm bảo rằng chương trình của bạn chạy hiệu quả và không gặp vấn đề về việc sử dụng bộ nhớ không đúng cách. Java sử dụng Garbage Collection (GC), một cơ chế tự động dọn dẹp bộ nhớ không còn sử dụng nữa, giúp giảm thiểu việc quản lý bộ nhớ thủ công.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="blog-thành đạt">
+  <meta name="twitter:description" content="Quản Lý Bộ Nhớ và Garbage Collection trong JavaLink to headingTrong Java, việc quản lý bộ nhớ là một phần quan trọng để đảm bảo rằng chương trình của bạn chạy hiệu quả và không gặp vấn đề về việc sử dụng bộ nhớ không đúng cách. Java sử dụng Garbage Collection (GC), một cơ chế tự động dọn dẹp bộ nhớ không còn sử dụng nữa, giúp giảm thiểu việc quản lý bộ nhớ thủ công.">
+
+<meta property="og:url" content="http://localhost:1313/blog/3/">
+  <meta property="og:site_name" content="blog-thành đạt">
+  <meta property="og:title" content="blog-thành đạt">
+  <meta property="og:description" content="Quản Lý Bộ Nhớ và Garbage Collection trong JavaLink to headingTrong Java, việc quản lý bộ nhớ là một phần quan trọng để đảm bảo rằng chương trình của bạn chạy hiệu quả và không gặp vấn đề về việc sử dụng bộ nhớ không đúng cách. Java sử dụng Garbage Collection (GC), một cơ chế tự động dọn dẹp bộ nhớ không còn sử dụng nữa, giúp giảm thiểu việc quản lý bộ nhớ thủ công.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/blog/3/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      blog-thành đạt
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">Giới thiệu</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/blog/">Bài học</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/project/">Dự án</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/thanhtuu/">Thành Tựu</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contactme/">Liên hệ</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:1313/blog/3/">
+          
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="quản-lý-bộ-nhớ-và-garbage-collection-trong-java">
+  Quản Lý Bộ Nhớ và Garbage Collection trong Java
+  <a class="heading-link" href="#qu%e1%ba%a3n-l%c3%bd-b%e1%bb%99-nh%e1%bb%9b-v%c3%a0-garbage-collection-trong-java">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Trong Java, việc quản lý bộ nhớ là một phần quan trọng để đảm bảo rằng chương trình của bạn chạy hiệu quả và không gặp vấn đề về việc sử dụng bộ nhớ không đúng cách. Java sử dụng <strong>Garbage Collection (GC)</strong>, một cơ chế tự động dọn dẹp bộ nhớ không còn sử dụng nữa, giúp giảm thiểu việc quản lý bộ nhớ thủ công.</p>
+<h2 id="quản-lý-bộ-nhớ">
+  Quản lý Bộ Nhớ
+  <a class="heading-link" href="#qu%e1%ba%a3n-l%c3%bd-b%e1%bb%99-nh%e1%bb%9b">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Java sử dụng <strong>Heap</strong> và <strong>Stack</strong> để quản lý bộ nhớ khi chương trình chạy.</p>
+<ol>
+<li>
+<p><strong>Stack Memory (Bộ Nhớ Ngăn Xếp):</strong></p>
+<ul>
+<li>Dùng để lưu trữ các biến cục bộ và tham số của phương thức.</li>
+<li>Khi một phương thức được gọi, bộ nhớ cho các biến cục bộ của nó được cấp phát trong stack.</li>
+<li>Khi phương thức kết thúc, bộ nhớ này sẽ được giải phóng tự động.</li>
+</ul>
+</li>
+<li>
+<p><strong>Heap Memory (Bộ Nhớ Đống):</strong></p>
+<ul>
+<li>Dùng để lưu trữ các đối tượng (objects) được tạo ra trong chương trình.</li>
+<li>Bộ nhớ này được cấp phát khi tạo đối tượng bằng từ khóa <code>new</code>.</li>
+<li>Khi đối tượng không còn được tham chiếu, Garbage Collector sẽ tự động thu hồi bộ nhớ cho đối tượng đó.</li>
+</ul>
+</li>
+</ol>
+<h2 id="garbage-collection-là-gì">
+  Garbage Collection là gì?
+  <a class="heading-link" href="#garbage-collection-l%c3%a0-g%c3%ac">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><strong>Garbage Collection</strong> (GC) là một cơ chế tự động của Java giúp giải phóng bộ nhớ bằng cách dọn dẹp những đối tượng không còn được sử dụng (không còn tham chiếu). Điều này giúp tránh tình trạng <strong>rò rỉ bộ nhớ</strong> (memory leaks) mà không cần lập trình viên phải giải phóng bộ nhớ thủ công như trong các ngôn ngữ khác.</p>
+<h2 id="quá-trình-garbage-collection">
+  Quá Trình Garbage Collection
+  <a class="heading-link" href="#qu%c3%a1-tr%c3%acnh-garbage-collection">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Garbage Collection trong Java hoạt động thông qua các bước chính:</p>
+<ol>
+<li><strong>Đánh dấu (Marking):</strong> GC sẽ đánh dấu tất cả các đối tượng mà chương trình còn sử dụng, tức là những đối tượng vẫn còn được tham chiếu.</li>
+<li><strong>Dọn dẹp (Sweeping):</strong> Sau khi đánh dấu các đối tượng còn sử dụng, GC sẽ giải phóng bộ nhớ của các đối tượng không còn được tham chiếu.</li>
+<li><strong>Thu gom (Compacting):</strong> Bộ nhớ bị phân mảnh có thể được thu gọn lại để cải thiện hiệu quả sử dụng bộ nhớ.</li>
+</ol>
+<p>Java không cung cấp cách trực tiếp để lập trình viên điều khiển GC, nhưng bạn có thể yêu cầu GC thực hiện thông qua <code>System.gc()</code> (mặc dù không đảm bảo rằng GC sẽ chạy ngay lập tức).</p>
+<h2 id="ví-dụ-về-garbage-collection-trong-java">
+  Ví dụ về Garbage Collection trong Java
+  <a class="heading-link" href="#v%c3%ad-d%e1%bb%a5-v%e1%bb%81-garbage-collection-trong-java">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">GarbageCollectionExample</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Tạo đối tượng</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">MyObject</span><span class="w"> </span><span class="n">obj1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">MyObject</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">MyObject</span><span class="w"> </span><span class="n">obj2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">MyObject</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Đặt obj1 là null để đối tượng không còn tham chiếu</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">obj1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Yêu cầu Garbage Collector dọn dẹp bộ nhớ</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">gc</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Đối tượng obj2 vẫn có thể sử dụng</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">obj2</span><span class="p">.</span><span class="na">display</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">class</span> <span class="nc">MyObject</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">display</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Object is still alive!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Phương thức này sẽ được gọi khi đối tượng bị GC thu hồi</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">protected</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">finalize</span><span class="p">()</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Throwable</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Garbage Collector is cleaning up...&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h2 id="kết-luận">
+  Kết luận
+  <a class="heading-link" href="#k%e1%ba%bft-lu%e1%ba%adn">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Garbage Collection là một tính năng quan trọng của Java giúp giảm bớt gánh nặng cho lập trình viên trong việc quản lý bộ nhớ. Tuy nhiên, lập trình viên vẫn cần lưu ý đến việc sử dụng bộ nhớ hiệu quả để tối ưu hóa hiệu suất chương trình.
+<a href="http://localhost:1313/blog"  class="external-link" target="_blank" rel="noopener">Quay lại</a>
+<a href="http://localhost:1313/blog/4/"  class="external-link" target="_blank" rel="noopener">Chuyển sang bài học tiếp theo</a></p>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2021 -
+    
+    2024
+     Đỗ Thành Đạt 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+   · blog-thành đạt
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Đỗ Thành Đạt">
+<meta name="description" content="
+  Java Database Connectivity (JDBC)
+  
+    
+    Link to heading
+  
+
+Java Database Connectivity (JDBC) là một API trong Java giúp các ứng dụng Java kết nối và thao tác với cơ sở dữ liệu. JDBC cung cấp các phương thức để truy vấn, cập nhật, và thao tác với dữ liệu trong cơ sở dữ liệu như MySQL, PostgreSQL, Oracle, và nhiều hệ quản trị cơ sở dữ liệu khác.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="blog-thành đạt">
+  <meta name="twitter:description" content="Java Database Connectivity (JDBC)Link to headingJava Database Connectivity (JDBC) là một API trong Java giúp các ứng dụng Java kết nối và thao tác với cơ sở dữ liệu. JDBC cung cấp các phương thức để truy vấn, cập nhật, và thao tác với dữ liệu trong cơ sở dữ liệu như MySQL, PostgreSQL, Oracle, và nhiều hệ quản trị cơ sở dữ liệu khác.">
+
+<meta property="og:url" content="http://localhost:1313/blog/9/">
+  <meta property="og:site_name" content="blog-thành đạt">
+  <meta property="og:title" content="blog-thành đạt">
+  <meta property="og:description" content="Java Database Connectivity (JDBC)Link to headingJava Database Connectivity (JDBC) là một API trong Java giúp các ứng dụng Java kết nối và thao tác với cơ sở dữ liệu. JDBC cung cấp các phương thức để truy vấn, cập nhật, và thao tác với dữ liệu trong cơ sở dữ liệu như MySQL, PostgreSQL, Oracle, và nhiều hệ quản trị cơ sở dữ liệu khác.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/blog/9/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      blog-thành đạt
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">Giới thiệu</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/blog/">Bài học</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/project/">Dự án</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/thanhtuu/">Thành Tựu</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contactme/">Liên hệ</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:1313/blog/9/">
+          
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="java-database-connectivity-jdbc">
+  Java Database Connectivity (JDBC)
+  <a class="heading-link" href="#java-database-connectivity-jdbc">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p><strong>Java Database Connectivity (JDBC)</strong> là một API trong Java giúp các ứng dụng Java kết nối và thao tác với cơ sở dữ liệu. JDBC cung cấp các phương thức để truy vấn, cập nhật, và thao tác với dữ liệu trong cơ sở dữ liệu như MySQL, PostgreSQL, Oracle, và nhiều hệ quản trị cơ sở dữ liệu khác.</p>
+<p>JDBC sử dụng các lớp và giao diện để thiết lập kết nối với cơ sở dữ liệu, gửi các câu lệnh SQL và nhận kết quả trả về.</p>
+<h2 id="1-cấu-trúc-của-jdbc">
+  1. Cấu Trúc của JDBC
+  <a class="heading-link" href="#1-c%e1%ba%a5u-tr%c3%bac-c%e1%bb%a7a-jdbc">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>JDBC có thể được chia thành ba thành phần chính:</p>
+<ol>
+<li><strong>JDBC Drivers:</strong> Là các lớp cung cấp giao diện giữa Java và các cơ sở dữ liệu.</li>
+<li><strong>Connection:</strong> Đối tượng dùng để thiết lập kết nối tới cơ sở dữ liệu.</li>
+<li><strong>Statement:</strong> Đối tượng dùng để thực thi các câu lệnh SQL.</li>
+<li><strong>ResultSet:</strong> Đối tượng chứa kết quả truy vấn từ cơ sở dữ liệu.</li>
+</ol>
+<h2 id="2-cách-kết-nối-với-cơ-sở-dữ-liệu">
+  2. Cách Kết Nối Với Cơ Sở Dữ Liệu
+  <a class="heading-link" href="#2-c%c3%a1ch-k%e1%ba%bft-n%e1%bb%91i-v%e1%bb%9bi-c%c6%a1-s%e1%bb%9f-d%e1%bb%af-li%e1%bb%87u">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Để kết nối với cơ sở dữ liệu, bạn cần thực hiện các bước sau:</p>
+<ol>
+<li><strong>Tải JDBC Driver</strong>: Tải JDBC driver phù hợp với hệ quản trị cơ sở dữ liệu mà bạn đang sử dụng.</li>
+<li><strong>Kết nối đến cơ sở dữ liệu</strong>: Dùng đối tượng <code>Connection</code> để kết nối.</li>
+<li><strong>Tạo đối tượng <code>Statement</code></strong>: Để gửi câu lệnh SQL đến cơ sở dữ liệu.</li>
+<li><strong>Xử lý kết quả</strong>: Dùng <code>ResultSet</code> để lưu trữ và xử lý kết quả trả về từ cơ sở dữ liệu.</li>
+</ol>
+<h3 id="21-cách-kết-nối-jdbc-với-mysql">
+  2.1. Cách Kết Nối JDBC với MySQL
+  <a class="heading-link" href="#21-c%c3%a1ch-k%e1%ba%bft-n%e1%bb%91i-jdbc-v%e1%bb%9bi-mysql">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Đầu tiên, bạn cần thêm JDBC driver của MySQL vào dự án của bạn. Nếu sử dụng Maven, bạn có thể thêm dependency sau vào file <code>pom.xml</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;groupId&gt;</span>mysql<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;artifactId&gt;</span>mysql-connector-java<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;version&gt;</span>8.0.23<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span>
+</span></span></code></pre></div><h3 id="22-ví-dụ-về-kết-nối-cơ-bản-và-truy-vấn-dữ-liệu">
+  2.2. Ví Dụ về Kết Nối Cơ Bản và Truy Vấn Dữ Liệu
+  <a class="heading-link" href="#22-v%c3%ad-d%e1%bb%a5-v%e1%bb%81-k%e1%ba%bft-n%e1%bb%91i-c%c6%a1-b%e1%ba%a3n-v%c3%a0-truy-v%e1%ba%a5n-d%e1%bb%af-li%e1%bb%87u">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<h4 id="bước-1-kết-nối-với-cơ-sở-dữ-liệu">
+  Bước 1: Kết nối với cơ sở dữ liệu
+  <a class="heading-link" href="#b%c6%b0%e1%bb%9bc-1-k%e1%ba%bft-n%e1%bb%91i-v%e1%bb%9bi-c%c6%a1-s%e1%bb%9f-d%e1%bb%af-li%e1%bb%87u">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.sql.*</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">JDBCExample</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// URL kết nối tới cơ sở dữ liệu MySQL</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;jdbc:mysql://localhost:3306/mydatabase&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;root&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;password&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">// Tạo kết nối đến cơ sở dữ liệu</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">Connection</span><span class="w"> </span><span class="n">connection</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DriverManager</span><span class="p">.</span><span class="na">getConnection</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="n">username</span><span class="p">,</span><span class="w"> </span><span class="n">password</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Kết nối thành công!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">// Tạo statement để thực thi câu lệnh SQL</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">Statement</span><span class="w"> </span><span class="n">statement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">connection</span><span class="p">.</span><span class="na">createStatement</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">// Truy vấn dữ liệu từ bảng &#34;employees&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">String</span><span class="w"> </span><span class="n">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;SELECT * FROM employees&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">ResultSet</span><span class="w"> </span><span class="n">resultSet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">statement</span><span class="p">.</span><span class="na">executeQuery</span><span class="p">(</span><span class="n">sql</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">// Xử lý kết quả trả về</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">resultSet</span><span class="p">.</span><span class="na">next</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="kt">int</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">resultSet</span><span class="p">.</span><span class="na">getInt</span><span class="p">(</span><span class="s">&#34;id&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">resultSet</span><span class="p">.</span><span class="na">getString</span><span class="p">(</span><span class="s">&#34;name&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="kt">double</span><span class="w"> </span><span class="n">salary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">resultSet</span><span class="p">.</span><span class="na">getDouble</span><span class="p">(</span><span class="s">&#34;salary&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;ID: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&#34;, Tên: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&#34;, Lương: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">salary</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">// Đóng kết nối</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">resultSet</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">statement</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">connection</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">SQLException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p><strong>Kết quả (Giả sử cơ sở dữ liệu có bảng &ldquo;employees&rdquo;):</strong></p>
+<pre tabindex="0"><code>Kết nối thành công!
+ID: 1, Tên: John, Lương: 50000.0
+ID: 2, Tên: Jane, Lương: 60000.0
+</code></pre><h2 id="3-các-loại-statement-trong-jdbc">
+  3. Các Loại Statement trong JDBC
+  <a class="heading-link" href="#3-c%c3%a1c-lo%e1%ba%a1i-statement-trong-jdbc">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>JDBC cung cấp ba loại <code>Statement</code> để thực thi các câu lệnh SQL:</p>
+<h3 id="31-statement">
+  3.1. <code>Statement</code>
+  <a class="heading-link" href="#31-statement">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Dùng cho các câu lệnh SQL đơn giản như <code>SELECT</code>, <code>INSERT</code>, <code>UPDATE</code>, <code>DELETE</code>.</p>
+<h4 id="ví-dụ">
+  Ví dụ:
+  <a class="heading-link" href="#v%c3%ad-d%e1%bb%a5">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Statement</span><span class="w"> </span><span class="n">statement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">connection</span><span class="p">.</span><span class="na">createStatement</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">String</span><span class="w"> </span><span class="n">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;SELECT * FROM employees&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">ResultSet</span><span class="w"> </span><span class="n">resultSet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">statement</span><span class="p">.</span><span class="na">executeQuery</span><span class="p">(</span><span class="n">sql</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></div><h3 id="32-preparedstatement">
+  3.2. <code>PreparedStatement</code>
+  <a class="heading-link" href="#32-preparedstatement">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Dùng khi bạn cần thực thi các câu lệnh SQL có tham số động, giúp bảo mật tốt hơn và tối ưu hiệu suất khi thực thi nhiều lần.</p>
+<h4 id="ví-dụ-1">
+  Ví dụ:
+  <a class="heading-link" href="#v%c3%ad-d%e1%bb%a5-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">String</span><span class="w"> </span><span class="n">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;INSERT INTO employees (name, salary) VALUES (?, ?)&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">PreparedStatement</span><span class="w"> </span><span class="n">preparedStatement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">connection</span><span class="p">.</span><span class="na">prepareStatement</span><span class="p">(</span><span class="n">sql</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">preparedStatement</span><span class="p">.</span><span class="na">setString</span><span class="p">(</span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;Alice&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">preparedStatement</span><span class="p">.</span><span class="na">setDouble</span><span class="p">(</span><span class="n">2</span><span class="p">,</span><span class="w"> </span><span class="n">70000</span><span class="p">.</span><span class="na">0</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">preparedStatement</span><span class="p">.</span><span class="na">executeUpdate</span><span class="p">();</span><span class="w">
+</span></span></span></code></pre></div><h3 id="33-callablestatement">
+  3.3. <code>CallableStatement</code>
+  <a class="heading-link" href="#33-callablestatement">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Dùng để gọi các thủ tục (stored procedures) trong cơ sở dữ liệu.</p>
+<h4 id="ví-dụ-2">
+  Ví dụ:
+  <a class="heading-link" href="#v%c3%ad-d%e1%bb%a5-2">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">CallableStatement</span><span class="w"> </span><span class="n">callableStatement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">connection</span><span class="p">.</span><span class="na">prepareCall</span><span class="p">(</span><span class="s">&#34;{call getEmployeeById(?)}&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">callableStatement</span><span class="p">.</span><span class="na">setInt</span><span class="p">(</span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="n">1</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">ResultSet</span><span class="w"> </span><span class="n">resultSet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">callableStatement</span><span class="p">.</span><span class="na">executeQuery</span><span class="p">();</span><span class="w">
+</span></span></span></code></pre></div><h2 id="4-xử-lý-kết-quả-với-resultset">
+  4. Xử Lý Kết Quả với <code>ResultSet</code>
+  <a class="heading-link" href="#4-x%e1%bb%ad-l%c3%bd-k%e1%ba%bft-qu%e1%ba%a3-v%e1%bb%9bi-resultset">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Sau khi thực thi câu lệnh <code>SELECT</code>, kết quả trả về sẽ được lưu trữ trong một đối tượng <code>ResultSet</code>. Bạn có thể sử dụng các phương thức của <code>ResultSet</code> để truy xuất dữ liệu.</p>
+<h3 id="41-các-phương-thức-thường-dùng-của-resultset">
+  4.1. Các Phương Thức Thường Dùng của <code>ResultSet</code>
+  <a class="heading-link" href="#41-c%c3%a1c-ph%c6%b0%c6%a1ng-th%e1%bb%a9c-th%c6%b0%e1%bb%9dng-d%c3%b9ng-c%e1%bb%a7a-resultset">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><code>getInt(String columnName)</code>: Lấy giá trị kiểu <code>int</code> của cột.</li>
+<li><code>getString(String columnName)</code>: Lấy giá trị kiểu <code>String</code> của cột.</li>
+<li><code>getDouble(String columnName)</code>: Lấy giá trị kiểu <code>double</code> của cột.</li>
+<li><code>next()</code>: Di chuyển con trỏ đến dòng kết quả tiếp theo.</li>
+</ul>
+<h3 id="42-ví-dụ-sử-dụng-resultset">
+  4.2. Ví Dụ Sử Dụng <code>ResultSet</code>
+  <a class="heading-link" href="#42-v%c3%ad-d%e1%bb%a5-s%e1%bb%ad-d%e1%bb%a5ng-resultset">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">resultSet</span><span class="p">.</span><span class="na">next</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">resultSet</span><span class="p">.</span><span class="na">getInt</span><span class="p">(</span><span class="s">&#34;id&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">resultSet</span><span class="p">.</span><span class="na">getString</span><span class="p">(</span><span class="s">&#34;name&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">salary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">resultSet</span><span class="p">.</span><span class="na">getDouble</span><span class="p">(</span><span class="s">&#34;salary&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;ID: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&#34;, Tên: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&#34;, Lương: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">salary</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h2 id="5-cập-nhật-dữ-liệu-với-jdbc">
+  5. Cập Nhật Dữ Liệu với JDBC
+  <a class="heading-link" href="#5-c%e1%ba%adp-nh%e1%ba%adt-d%e1%bb%af-li%e1%bb%87u-v%e1%bb%9bi-jdbc">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>JDBC cũng hỗ trợ các câu lệnh SQL như <code>INSERT</code>, <code>UPDATE</code>, và <code>DELETE</code> để thay đổi dữ liệu trong cơ sở dữ liệu.</p>
+<h3 id="51-ví-dụ-về-cập-nhật-dữ-liệu">
+  5.1. Ví Dụ về Cập Nhật Dữ Liệu
+  <a class="heading-link" href="#51-v%c3%ad-d%e1%bb%a5-v%e1%bb%81-c%e1%ba%adp-nh%e1%ba%adt-d%e1%bb%af-li%e1%bb%87u">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">String</span><span class="w"> </span><span class="n">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;UPDATE employees SET salary = ? WHERE id = ?&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">PreparedStatement</span><span class="w"> </span><span class="n">preparedStatement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">connection</span><span class="p">.</span><span class="na">prepareStatement</span><span class="p">(</span><span class="n">sql</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">preparedStatement</span><span class="p">.</span><span class="na">setDouble</span><span class="p">(</span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="n">80000</span><span class="p">.</span><span class="na">0</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">preparedStatement</span><span class="p">.</span><span class="na">setInt</span><span class="p">(</span><span class="n">2</span><span class="p">,</span><span class="w"> </span><span class="n">1</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">preparedStatement</span><span class="p">.</span><span class="na">executeUpdate</span><span class="p">();</span><span class="w">
+</span></span></span></code></pre></div><h3 id="52-ví-dụ-về-xóa-dữ-liệu">
+  5.2. Ví Dụ về Xóa Dữ Liệu
+  <a class="heading-link" href="#52-v%c3%ad-d%e1%bb%a5-v%e1%bb%81-x%c3%b3a-d%e1%bb%af-li%e1%bb%87u">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">String</span><span class="w"> </span><span class="n">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;DELETE FROM employees WHERE id = ?&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">PreparedStatement</span><span class="w"> </span><span class="n">preparedStatement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">connection</span><span class="p">.</span><span class="na">prepareStatement</span><span class="p">(</span><span class="n">sql</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">preparedStatement</span><span class="p">.</span><span class="na">setInt</span><span class="p">(</span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="n">2</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">preparedStatement</span><span class="p">.</span><span class="na">executeUpdate</span><span class="p">();</span><span class="w">
+</span></span></span></code></pre></div><h2 id="6-xử-lý-ngoại-lệ-trong-jdbc">
+  6. Xử Lý Ngoại Lệ trong JDBC
+  <a class="heading-link" href="#6-x%e1%bb%ad-l%c3%bd-ngo%e1%ba%a1i-l%e1%bb%87-trong-jdbc">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>JDBC sử dụng ngoại lệ <code>SQLException</code> để báo cáo lỗi khi thực hiện các thao tác với cơ sở dữ liệu. Bạn cần xử lý các ngoại lệ này để đảm bảo ứng dụng của bạn không bị sập khi gặp lỗi kết nối hoặc lỗi truy vấn.</p>
+<h4 id="ví-dụ-về-xử-lý-ngoại-lệ">
+  Ví Dụ về Xử Lý Ngoại Lệ
+  <a class="heading-link" href="#v%c3%ad-d%e1%bb%a5-v%e1%bb%81-x%e1%bb%ad-l%c3%bd-ngo%e1%ba%a1i-l%e1%bb%87">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Kết nối và thực hiện các câu lệnh SQL</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">SQLException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Lỗi SQL: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w"> </span><span class="k">finally</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Đảm bảo đóng kết nối và các tài nguyên</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h2 id="7-kết-luận">
+  7. Kết Luận
+  <a class="heading-link" href="#7-k%e1%ba%bft-lu%e1%ba%adn">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Java Database Connectivity (JDBC) là một API quan trọng giúp các ứng dụng Java giao tiếp với cơ sở dữ liệu. Với JDBC, bạn có thể thực hiện các thao tác như kết nối, truy vấn, cập nhật, và xóa dữ liệu từ cơ sở dữ liệu. Hiểu rõ các khái niệm như <code>Connection</code>, <code>Statement</code>, <code>PreparedStatement</code>, và <code>ResultSet</code> sẽ giúp bạn phát triển các ứng dụng Java hiệu quả và mạnh mẽ.
+<a href="http://localhost:1313/blog"  class="external-link" target="_blank" rel="noopener">Quay lại</a>
+<a href="http://localhost:1313/blog/10/"  class="external-link" target="_blank" rel="noopener">Chuyển sang bài học tiếp theo</a></p>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2021 -
+    
+    2024
+     Đỗ Thành Đạt 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

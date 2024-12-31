@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+   · blog-thành đạt
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Đỗ Thành Đạt">
+<meta name="description" content="
+  Quản Lý Dữ Liệu với API và Fetch
+  
+    
+    Link to heading
+  
+
+Trong JavaScript, việc tương tác với API (Application Programming Interface) và xử lý dữ liệu từ các dịch vụ web là một phần quan trọng trong phát triển ứng dụng web hiện đại. Một trong những cách phổ biến để thực hiện điều này là sử dụng API kết hợp với fetch() – một API cho phép bạn thực hiện các yêu cầu HTTP và nhận dữ liệu từ các dịch vụ web.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="blog-thành đạt">
+  <meta name="twitter:description" content="Quản Lý Dữ Liệu với API và FetchLink to headingTrong JavaScript, việc tương tác với API (Application Programming Interface) và xử lý dữ liệu từ các dịch vụ web là một phần quan trọng trong phát triển ứng dụng web hiện đại. Một trong những cách phổ biến để thực hiện điều này là sử dụng API kết hợp với fetch() – một API cho phép bạn thực hiện các yêu cầu HTTP và nhận dữ liệu từ các dịch vụ web.">
+
+<meta property="og:url" content="http://localhost:1313/blog/14/">
+  <meta property="og:site_name" content="blog-thành đạt">
+  <meta property="og:title" content="blog-thành đạt">
+  <meta property="og:description" content="Quản Lý Dữ Liệu với API và FetchLink to headingTrong JavaScript, việc tương tác với API (Application Programming Interface) và xử lý dữ liệu từ các dịch vụ web là một phần quan trọng trong phát triển ứng dụng web hiện đại. Một trong những cách phổ biến để thực hiện điều này là sử dụng API kết hợp với fetch() – một API cho phép bạn thực hiện các yêu cầu HTTP và nhận dữ liệu từ các dịch vụ web.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/blog/14/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      blog-thành đạt
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">Giới thiệu</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/blog/">Bài học</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/project/">Dự án</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/thanhtuu/">Thành Tựu</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contactme/">Liên hệ</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:1313/blog/14/">
+          
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="quản-lý-dữ-liệu-với-api-và-fetch">
+  Quản Lý Dữ Liệu với API và Fetch
+  <a class="heading-link" href="#qu%e1%ba%a3n-l%c3%bd-d%e1%bb%af-li%e1%bb%87u-v%e1%bb%9bi-api-v%c3%a0-fetch">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Trong JavaScript, việc tương tác với API (Application Programming Interface) và xử lý dữ liệu từ các dịch vụ web là một phần quan trọng trong phát triển ứng dụng web hiện đại. Một trong những cách phổ biến để thực hiện điều này là sử dụng API kết hợp với <code>fetch()</code> – một API cho phép bạn thực hiện các yêu cầu HTTP và nhận dữ liệu từ các dịch vụ web.</p>
+<h2 id="1-api-là-gì">
+  1. API là gì?
+  <a class="heading-link" href="#1-api-l%c3%a0-g%c3%ac">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>API là một giao diện giữa các phần mềm, cho phép chúng tương tác với nhau. Trong ngữ cảnh của ứng dụng web, API thường được sử dụng để lấy hoặc gửi dữ liệu từ máy chủ. Dữ liệu thường được truyền dưới dạng JSON, XML hoặc HTML.</p>
+<ul>
+<li><strong>GET</strong>: Lấy dữ liệu từ máy chủ.</li>
+<li><strong>POST</strong>: Gửi dữ liệu đến máy chủ.</li>
+<li><strong>PUT/PATCH</strong>: Cập nhật dữ liệu trên máy chủ.</li>
+<li><strong>DELETE</strong>: Xóa dữ liệu trên máy chủ.</li>
+</ul>
+<h2 id="2-fetch-api">
+  2. Fetch API
+  <a class="heading-link" href="#2-fetch-api">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><code>fetch()</code> là một API trong JavaScript được sử dụng để thực hiện các yêu cầu HTTP và nhận dữ liệu từ máy chủ. Đây là một giải pháp thay thế cho <code>XMLHttpRequest</code>, cung cấp cú pháp dễ sử dụng và hỗ trợ Promise, giúp xử lý bất đồng bộ tốt hơn.</p>
+<h3 id="21-cú-pháp-cơ-bản-của-fetch">
+  2.1. Cú Pháp Cơ Bản của Fetch
+  <a class="heading-link" href="#21-c%c3%ba-ph%c3%a1p-c%c6%a1-b%e1%ba%a3n-c%e1%bb%a7a-fetch">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><code>fetch()</code> trả về một Promise, vì vậy bạn có thể sử dụng <code>then()</code> để xử lý kết quả khi yêu cầu hoàn thành.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://api.example.com/data&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>  <span class="c1">// Chuyển đổi dữ liệu thành JSON
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>    <span class="c1">// Xử lý dữ liệu nhận được
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Lỗi:&#39;</span><span class="p">,</span> <span class="nx">error</span><span class="p">));</span>  <span class="c1">// Xử lý lỗi nếu có
+</span></span></span></code></pre></div><ul>
+<li><strong>URL</strong>: Địa chỉ của API hoặc tài nguyên mà bạn muốn yêu cầu.</li>
+<li><strong>response.json()</strong>: Phương thức chuyển đổi dữ liệu phản hồi (response) thành dạng JSON, nếu dữ liệu được trả về dưới dạng JSON.</li>
+<li><strong>catch()</strong>: Xử lý các lỗi phát sinh trong quá trình gửi yêu cầu.</li>
+</ul>
+<h3 id="22-phương-thức-và-các-tùy-chọn-trong-fetch">
+  2.2. Phương Thức và Các Tùy Chọn trong Fetch
+  <a class="heading-link" href="#22-ph%c6%b0%c6%a1ng-th%e1%bb%a9c-v%c3%a0-c%c3%a1c-t%c3%b9y-ch%e1%bb%8dn-trong-fetch">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Bạn có thể chỉ định phương thức HTTP và các tuỳ chọn khác trong <code>fetch()</code> thông qua đối tượng tùy chọn (options).</p>
+<h4 id="221-gửi-dữ-liệu-với-phương-thức-post">
+  2.2.1. Gửi Dữ Liệu với Phương Thức POST
+  <a class="heading-link" href="#221-g%e1%bb%adi-d%e1%bb%af-li%e1%bb%87u-v%e1%bb%9bi-ph%c6%b0%c6%a1ng-th%e1%bb%a9c-post">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://api.example.com/data&#39;</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">method</span><span class="o">:</span> <span class="s1">&#39;POST&#39;</span><span class="p">,</span>  <span class="c1">// Chỉ định phương thức HTTP là POST
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;Content-Type&#39;</span><span class="o">:</span> <span class="s1">&#39;application/json&#39;</span>  <span class="c1">// Định dạng dữ liệu gửi đi là JSON
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">body</span><span class="o">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">({</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span> <span class="mi">30</span> <span class="p">})</span>  <span class="c1">// Dữ liệu cần gửi
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">})</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Lỗi:&#39;</span><span class="p">,</span> <span class="nx">error</span><span class="p">));</span>
+</span></span></code></pre></div><ul>
+<li><strong>method</strong>: Chỉ định phương thức HTTP, ví dụ: <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code>.</li>
+<li><strong>headers</strong>: Đặt các tiêu đề HTTP, ví dụ như <code>Content-Type</code> để chỉ định định dạng của dữ liệu.</li>
+<li><strong>body</strong>: Dữ liệu cần gửi đi (chỉ dùng trong các yêu cầu <code>POST</code>, <code>PUT</code>, <code>PATCH</code>).</li>
+</ul>
+<h4 id="222-thêm-tham-số-và-headers">
+  2.2.2. Thêm Tham Số và Headers
+  <a class="heading-link" href="#222-th%c3%aam-tham-s%e1%bb%91-v%c3%a0-headers">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://api.example.com/data?name=John&amp;age=30&#39;</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">method</span><span class="o">:</span> <span class="s1">&#39;GET&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;Authorization&#39;</span><span class="o">:</span> <span class="s1">&#39;Bearer token123&#39;</span>  <span class="c1">// Thêm Authorization header cho yêu cầu
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Lỗi:&#39;</span><span class="p">,</span> <span class="nx">error</span><span class="p">));</span>
+</span></span></code></pre></div><ul>
+<li><strong>Tham số URL</strong>: Tham số có thể được thêm vào URL dưới dạng chuỗi truy vấn.</li>
+<li><strong>headers</strong>: Các tiêu đề có thể được thêm vào yêu cầu, ví dụ như token xác thực.</li>
+</ul>
+<h2 id="3-quản-lý-dữ-liệu-với-api">
+  3. Quản Lý Dữ Liệu với API
+  <a class="heading-link" href="#3-qu%e1%ba%a3n-l%c3%bd-d%e1%bb%af-li%e1%bb%87u-v%e1%bb%9bi-api">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Sau khi có dữ liệu từ API, bạn có thể sử dụng dữ liệu này để cập nhật giao diện người dùng (UI) hoặc lưu trữ trong ứng dụng. Dưới đây là một số ví dụ về cách quản lý và xử lý dữ liệu với <code>fetch()</code>.</p>
+<h3 id="31-hiển-thị-dữ-liệu-từ-api">
+  3.1. Hiển Thị Dữ Liệu Từ API
+  <a class="heading-link" href="#31-hi%e1%bb%83n-th%e1%bb%8b-d%e1%bb%af-li%e1%bb%87u-t%e1%bb%ab-api">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Giả sử bạn đang lấy danh sách người dùng từ API và hiển thị chúng trên trang web:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://api.example.com/users&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">usersList</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;usersList&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">data</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">user</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="kd">let</span> <span class="nx">listItem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">listItem</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="sb">`</span><span class="si">${</span><span class="nx">user</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb"> - </span><span class="si">${</span><span class="nx">user</span><span class="p">.</span><span class="nx">email</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">usersList</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">listItem</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="p">})</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Lỗi:&#39;</span><span class="p">,</span> <span class="nx">error</span><span class="p">));</span>
+</span></span></code></pre></div><p>Trong ví dụ trên:</p>
+<ul>
+<li>Chúng ta gửi một yêu cầu <code>GET</code> để lấy danh sách người dùng từ API.</li>
+<li>Sau khi nhận dữ liệu (ở dạng JSON), chúng ta sử dụng <code>forEach()</code> để duyệt qua danh sách người dùng và hiển thị chúng trong một danh sách HTML.</li>
+</ul>
+<h3 id="32-cập-nhật-giao-diện-sau-khi-gửi-dữ-liệu">
+  3.2. Cập Nhật Giao Diện Sau Khi Gửi Dữ Liệu
+  <a class="heading-link" href="#32-c%e1%ba%adp-nh%e1%ba%adt-giao-di%e1%bb%87n-sau-khi-g%e1%bb%adi-d%e1%bb%af-li%e1%bb%87u">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Giả sử bạn muốn gửi dữ liệu từ một biểu mẫu và sau đó hiển thị kết quả trả về từ máy chủ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">form</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myForm&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">form</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;submit&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>  <span class="c1">// Ngừng gửi form thông qua phương thức mặc định
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">formData</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">FormData</span><span class="p">(</span><span class="nx">form</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{};</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">formData</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">value</span><span class="p">,</span> <span class="nx">key</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">data</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">=</span> <span class="nx">value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://api.example.com/submit&#39;</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">method</span><span class="o">:</span> <span class="s1">&#39;POST&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="s1">&#39;Content-Type&#39;</span><span class="o">:</span> <span class="s1">&#39;application/json&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">body</span><span class="o">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>  <span class="c1">// Dữ liệu biểu mẫu gửi đi dưới dạng JSON
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">result</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;responseMessage&#39;</span><span class="p">).</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;Dữ liệu đã được gửi thành công!&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Lỗi:&#39;</span><span class="p">,</span> <span class="nx">error</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><ul>
+<li><strong>FormData</strong>: Được sử dụng để thu thập dữ liệu từ biểu mẫu.</li>
+<li><strong>event.preventDefault()</strong>: Ngừng hành động gửi form mặc định để có thể gửi dữ liệu bằng <code>fetch()</code>.</li>
+</ul>
+<h2 id="4-xử-lý-lỗi-khi-sử-dụng-fetch">
+  4. Xử Lý Lỗi Khi Sử Dụng Fetch
+  <a class="heading-link" href="#4-x%e1%bb%ad-l%c3%bd-l%e1%bb%97i-khi-s%e1%bb%ad-d%e1%bb%a5ng-fetch">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Mặc dù <code>fetch()</code> cung cấp Promise, nhưng nó chỉ trả về lỗi khi có sự cố với mạng (ví dụ: mất kết nối). Nếu máy chủ trả về mã trạng thái HTTP lỗi (ví dụ: 404 hoặc 500), <code>fetch()</code> sẽ không tự động coi đó là lỗi.</p>
+<p>Để xử lý các lỗi HTTP, bạn có thể kiểm tra mã trạng thái (status code) của phản hồi.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://api.example.com/data&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="sb">`Lỗi HTTP: </span><span class="si">${</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">})</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Lỗi:&#39;</span><span class="p">,</span> <span class="nx">error</span><span class="p">));</span>
+</span></span></code></pre></div><ul>
+<li><strong>response.ok</strong>: Là một thuộc tính cho biết liệu phản hồi có thành công (mã trạng thái 200-299) hay không.</li>
+</ul>
+<h2 id="5-cải-tiến-sử-dụng-asyncawait-với-fetch">
+  5. Cải Tiến: Sử Dụng Async/Await với Fetch
+  <a class="heading-link" href="#5-c%e1%ba%a3i-ti%e1%ba%bfn-s%e1%bb%ad-d%e1%bb%a5ng-asyncawait-v%e1%bb%9bi-fetch">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><code>async</code> và <code>await</code> giúp mã bất đồng bộ dễ đọc hơn. Bạn có thể sử dụng chúng thay cho các phương thức <code>then()</code> và <code>catch()</code>.</p>
+<h3 id="51-ví-dụ-với-asyncawait">
+  5.1. Ví Dụ với Async/Await
+  <a class="heading-link" href="#51-v%c3%ad-d%e1%bb%a5-v%e1%bb%9bi-asyncawait">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">fetchData</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">response</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://api.example.com/data&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="sb">`Lỗi HTTP: </span><span class="si">${</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Lỗi:&#39;</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">fetchData</span><span class="p">();</span>
+</span></span></code></pre></div><ul>
+<li><strong>await</strong>: Dùng để đợi Promise trả về kết quả, giúp mã trở nên dễ đọc và trực quan hơn.</li>
+<li><strong>try/catch</strong>: Giúp xử lý lỗi dễ dàng hơn khi sử dụng async/await.</li>
+</ul>
+<h2 id="6-kết-luận">
+  6. Kết Luận
+  <a class="heading-link" href="#6-k%e1%ba%bft-lu%e1%ba%adn">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Quản lý dữ liệu với API và <code>fetch()</code> là một phần quan trọng trong việc xây dựng các ứng dụng web động và tương tác. Bằng cách sử dụng <code>fetch()</code> với Promise hoặc async/await, bạn có thể dễ dàng thực hiện các yêu cầu HTTP, xử lý dữ liệu trả về từ API và cập nhật giao diện người dùng mà không cần phải tải lại trang.</p>
+<p>Các khái niệm quan trọng:</p>
+<ul>
+<li><strong>fetch()</strong>: API chính để thực hiện các yêu cầu HTTP.</li>
+<li><strong>GET, POST, PUT, DELETE</strong>: Các phương thức HTTP phổ biến.</li>
+<li><strong>Promises và Async/Await</strong>: Các công cụ hữu ích để xử lý bất đồng bộ.</li>
+<li><strong>Quản lý lỗi</strong>: Kiểm tra mã trạng thái HTTP và xử lý các lỗi.</li>
+</ul>
+<p>Với kiến thức này, bạn có thể tương tác với API trong các ứng dụng web, cung cấp trải nghiệm người dùng mượt mà và hiệu quả.
+<a href="http://localhost:1313/blog"  class="external-link" target="_blank" rel="noopener">Quay lại</a>
+<a href="http://localhost:1313/blog/15/"  class="external-link" target="_blank" rel="noopener">Chuyển sang bài học tiếp theo</a></p>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2021 -
+    
+    2024
+     Đỗ Thành Đạt 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

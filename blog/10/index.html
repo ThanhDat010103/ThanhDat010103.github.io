@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+   · blog-thành đạt
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Đỗ Thành Đạt">
+<meta name="description" content="
+  Cú Pháp Cơ Bản của JavaScript
+  
+    
+    Link to heading
+  
+
+JavaScript là một ngôn ngữ lập trình phổ biến được sử dụng rộng rãi trong phát triển web để tạo ra các trang web động và tương tác. Trong bài học này, chúng ta sẽ tìm hiểu cú pháp cơ bản của JavaScript, bao gồm cách khai báo biến, các cấu trúc điều khiển, hàm, và các thao tác cơ bản khác.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="blog-thành đạt">
+  <meta name="twitter:description" content="Cú Pháp Cơ Bản của JavaScriptLink to headingJavaScript là một ngôn ngữ lập trình phổ biến được sử dụng rộng rãi trong phát triển web để tạo ra các trang web động và tương tác. Trong bài học này, chúng ta sẽ tìm hiểu cú pháp cơ bản của JavaScript, bao gồm cách khai báo biến, các cấu trúc điều khiển, hàm, và các thao tác cơ bản khác.">
+
+<meta property="og:url" content="http://localhost:1313/blog/10/">
+  <meta property="og:site_name" content="blog-thành đạt">
+  <meta property="og:title" content="blog-thành đạt">
+  <meta property="og:description" content="Cú Pháp Cơ Bản của JavaScriptLink to headingJavaScript là một ngôn ngữ lập trình phổ biến được sử dụng rộng rãi trong phát triển web để tạo ra các trang web động và tương tác. Trong bài học này, chúng ta sẽ tìm hiểu cú pháp cơ bản của JavaScript, bao gồm cách khai báo biến, các cấu trúc điều khiển, hàm, và các thao tác cơ bản khác.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/blog/10/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      blog-thành đạt
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">Giới thiệu</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/blog/">Bài học</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/project/">Dự án</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/thanhtuu/">Thành Tựu</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contactme/">Liên hệ</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:1313/blog/10/">
+          
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="cú-pháp-cơ-bản-của-javascript">
+  Cú Pháp Cơ Bản của JavaScript
+  <a class="heading-link" href="#c%c3%ba-ph%c3%a1p-c%c6%a1-b%e1%ba%a3n-c%e1%bb%a7a-javascript">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>JavaScript là một ngôn ngữ lập trình phổ biến được sử dụng rộng rãi trong phát triển web để tạo ra các trang web động và tương tác. Trong bài học này, chúng ta sẽ tìm hiểu cú pháp cơ bản của JavaScript, bao gồm cách khai báo biến, các cấu trúc điều khiển, hàm, và các thao tác cơ bản khác.</p>
+<h2 id="1-khai-báo-biến">
+  1. Khai Báo Biến
+  <a class="heading-link" href="#1-khai-b%c3%a1o-bi%e1%ba%bfn">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>JavaScript sử dụng ba từ khóa chính để khai báo biến: <code>var</code>, <code>let</code>, và <code>const</code>.</p>
+<h3 id="11-var">
+  1.1. <code>var</code>
+  <a class="heading-link" href="#11-var">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><code>var</code> được sử dụng trong các phiên bản JavaScript trước đây. Biến khai báo bằng <code>var</code> có phạm vi toàn cục hoặc phạm vi hàm.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span>  <span class="c1">// Output: 10
+</span></span></span></code></pre></div><h3 id="12-let">
+  1.2. <code>let</code>
+  <a class="heading-link" href="#12-let">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><code>let</code> được sử dụng để khai báo biến có phạm vi block (khối mã), giúp tránh một số vấn đề trong việc sử dụng <code>var</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">y</span><span class="p">);</span>  <span class="c1">// Output: 20
+</span></span></span></code></pre></div><h3 id="13-const">
+  1.3. <code>const</code>
+  <a class="heading-link" href="#13-const">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><code>const</code> được sử dụng để khai báo hằng số (biến không thể thay đổi giá trị sau khi được gán).</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">z</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">z</span><span class="p">);</span>  <span class="c1">// Output: 30
+</span></span></span><span class="line"><span class="cl"><span class="c1">// z = 40;  // Lỗi: không thể thay đổi giá trị của hằng số
+</span></span></span></code></pre></div><h2 id="2-kiểu-dữ-liệu">
+  2. Kiểu Dữ Liệu
+  <a class="heading-link" href="#2-ki%e1%bb%83u-d%e1%bb%af-li%e1%bb%87u">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>JavaScript hỗ trợ các kiểu dữ liệu cơ bản sau:</p>
+<ul>
+<li><strong>Number</strong>: Số nguyên và số thực.</li>
+<li><strong>String</strong>: Chuỗi ký tự.</li>
+<li><strong>Boolean</strong>: Giá trị đúng (<code>true</code>) hoặc sai (<code>false</code>).</li>
+<li><strong>Null</strong>: Không có giá trị nào.</li>
+<li><strong>Undefined</strong>: Biến chưa được gán giá trị.</li>
+<li><strong>Object</strong>: Một tập hợp các thuộc tính và phương thức.</li>
+<li><strong>Array</strong>: Mảng.</li>
+</ul>
+<h3 id="ví-dụ">
+  Ví Dụ:
+  <a class="heading-link" href="#v%c3%ad-d%e1%bb%a5">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span>        <span class="c1">// Number
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&#34;John&#34;</span><span class="p">;</span>   <span class="c1">// String
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">isActive</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">// Boolean
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">person</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>   <span class="c1">// Null
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">data</span><span class="p">;</span>            <span class="c1">// Undefined
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span> <span class="c1">// Array
+</span></span></span></code></pre></div><h2 id="3-cấu-trúc-điều-kiện">
+  3. Cấu Trúc Điều Kiện
+  <a class="heading-link" href="#3-c%e1%ba%a5u-tr%c3%bac-%c4%91i%e1%bb%81u-ki%e1%bb%87n">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="31-câu-lệnh-if">
+  3.1. Câu Lệnh <code>if</code>
+  <a class="heading-link" href="#31-c%c3%a2u-l%e1%bb%87nh-if">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Câu lệnh <code>if</code> kiểm tra một điều kiện và thực thi khối mã nếu điều kiện đúng.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Bạn đủ tuổi trưởng thành&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Bạn chưa đủ tuổi trưởng thành&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="32-câu-lệnh-switch">
+  3.2. Câu Lệnh <code>switch</code>
+  <a class="heading-link" href="#32-c%c3%a2u-l%e1%bb%87nh-switch">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Câu lệnh <code>switch</code> được sử dụng để kiểm tra nhiều điều kiện khác nhau.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">fruit</span> <span class="o">=</span> <span class="s2">&#34;apple&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">switch</span> <span class="p">(</span><span class="nx">fruit</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">case</span> <span class="s2">&#34;apple&#34;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Đây là quả táo&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">case</span> <span class="s2">&#34;banana&#34;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Đây là quả chuối&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">default</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Quả không xác định&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="4-vòng-lặp">
+  4. Vòng Lặp
+  <a class="heading-link" href="#4-v%c3%b2ng-l%e1%ba%b7p">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="41-vòng-lặp-for">
+  4.1. Vòng Lặp <code>for</code>
+  <a class="heading-link" href="#41-v%c3%b2ng-l%e1%ba%b7p-for">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Vòng lặp <code>for</code> được sử dụng khi bạn biết số lần lặp.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Output: 0 1 2 3 4
+</span></span></span></code></pre></div><h3 id="42-vòng-lặp-while">
+  4.2. Vòng Lặp <code>while</code>
+  <a class="heading-link" href="#42-v%c3%b2ng-l%e1%ba%b7p-while">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Vòng lặp <code>while</code> được sử dụng khi bạn không chắc chắn số lần lặp, và điều kiện lặp sẽ được kiểm tra trước khi thực hiện.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">i</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Output: 0 1 2 3 4
+</span></span></span></code></pre></div><h2 id="5-hàm">
+  5. Hàm
+  <a class="heading-link" href="#5-h%c3%a0m">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Hàm trong JavaScript được sử dụng để nhóm các câu lệnh lại và thực thi khi cần thiết. Có hai cách để khai báo hàm: sử dụng <code>function</code> và khai báo hàm dưới dạng biểu thức hàm.</p>
+<h3 id="51-khai-báo-hàm-với-function">
+  5.1. Khai Báo Hàm với <code>function</code>
+  <a class="heading-link" href="#51-khai-b%c3%a1o-h%c3%a0m-v%e1%bb%9bi-function">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">greet</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Hello, &#34;</span> <span class="o">+</span> <span class="nx">name</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">greet</span><span class="p">(</span><span class="s2">&#34;Alice&#34;</span><span class="p">);</span> <span class="c1">// Output: Hello, Alice
+</span></span></span></code></pre></div><h3 id="52-hàm-dưới-dạng-biểu-thức-hàm-anonymous-function">
+  5.2. Hàm dưới dạng Biểu Thức Hàm (Anonymous Function)
+  <a class="heading-link" href="#52-h%c3%a0m-d%c6%b0%e1%bb%9bi-d%e1%ba%a1ng-bi%e1%bb%83u-th%e1%bb%a9c-h%c3%a0m-anonymous-function">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">sum</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sum</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">));</span> <span class="c1">// Output: 8
+</span></span></span></code></pre></div><h3 id="53-hàm-mũi-tên-arrow-function">
+  5.3. Hàm Mũi Tên (Arrow Function)
+  <a class="heading-link" href="#53-h%c3%a0m-m%c5%a9i-t%c3%aan-arrow-function">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Arrow function là một cú pháp ngắn gọn để khai báo hàm.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">multiply</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">a</span> <span class="o">*</span> <span class="nx">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">multiply</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">));</span> <span class="c1">// Output: 20
+</span></span></span></code></pre></div><h2 id="6-mảng-array">
+  6. Mảng (Array)
+  <a class="heading-link" href="#6-m%e1%ba%a3ng-array">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Mảng trong JavaScript là một danh sách có thể chứa nhiều giá trị.</p>
+<h3 id="61-khai-báo-mảng">
+  6.1. Khai Báo Mảng
+  <a class="heading-link" href="#61-khai-b%c3%a1o-m%e1%ba%a3ng">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;apple&#34;</span><span class="p">,</span> <span class="s2">&#34;banana&#34;</span><span class="p">,</span> <span class="s2">&#34;cherry&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fruits</span><span class="p">);</span> <span class="c1">// Output: [&#34;apple&#34;, &#34;banana&#34;, &#34;cherry&#34;]
+</span></span></span></code></pre></div><h3 id="62-truy-cập-và-thao-tác-với-mảng">
+  6.2. Truy Cập và Thao Tác với Mảng
+  <a class="heading-link" href="#62-truy-c%e1%ba%adp-v%c3%a0-thao-t%c3%a1c-v%e1%bb%9bi-m%e1%ba%a3ng">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;apple&#34;</span><span class="p">,</span> <span class="s2">&#34;banana&#34;</span><span class="p">,</span> <span class="s2">&#34;cherry&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fruits</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span> <span class="c1">// Output: apple
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="nx">fruits</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">&#34;orange&#34;</span><span class="p">);</span>  <span class="c1">// Thêm phần tử vào cuối mảng
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fruits</span><span class="p">);</span>     <span class="c1">// Output: [&#34;apple&#34;, &#34;banana&#34;, &#34;cherry&#34;, &#34;orange&#34;]
+</span></span></span></code></pre></div><h2 id="7-đối-tượng-object">
+  7. Đối Tượng (Object)
+  <a class="heading-link" href="#7-%c4%91%e1%bb%91i-t%c6%b0%e1%bb%a3ng-object">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Đối tượng trong JavaScript là một tập hợp các cặp khóa-giá trị.</p>
+<h3 id="71-khai-báo-đối-tượng">
+  7.1. Khai Báo Đối Tượng
+  <a class="heading-link" href="#71-khai-b%c3%a1o-%c4%91%e1%bb%91i-t%c6%b0%e1%bb%a3ng">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">person</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;John&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">age</span><span class="o">:</span> <span class="mi">30</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">greet</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Hello, &#34;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span> <span class="c1">// Output: John
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">person</span><span class="p">.</span><span class="nx">greet</span><span class="p">();</span>           <span class="c1">// Output: Hello, John
+</span></span></span></code></pre></div><h2 id="8-xử-lý-ngoại-lệ-error-handling">
+  8. Xử Lý Ngoại Lệ (Error Handling)
+  <a class="heading-link" href="#8-x%e1%bb%ad-l%c3%bd-ngo%e1%ba%a1i-l%e1%bb%87-error-handling">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>JavaScript sử dụng <code>try...catch</code> để xử lý các ngoại lệ.</p>
+<h3 id="ví-dụ-1">
+  Ví Dụ:
+  <a class="heading-link" href="#v%c3%ad-d%e1%bb%a5-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">/</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">result</span> <span class="o">===</span> <span class="kc">Infinity</span><span class="p">)</span> <span class="k">throw</span> <span class="s2">&#34;Chia cho 0 không hợp lệ!&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Lỗi: &#34;</span> <span class="o">+</span> <span class="nx">error</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Output: Lỗi: Chia cho 0 không hợp lệ!
+</span></span></span></code></pre></div><h2 id="9-câu-lệnh-return">
+  9. Câu Lệnh <code>return</code>
+  <a class="heading-link" href="#9-c%c3%a2u-l%e1%bb%87nh-return">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Câu lệnh <code>return</code> được sử dụng để trả về giá trị từ hàm.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">add</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">sum</span> <span class="o">=</span> <span class="nx">add</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sum</span><span class="p">);</span> <span class="c1">// Output: 7
+</span></span></span></code></pre></div><h2 id="10-kết-luận">
+  10. Kết Luận
+  <a class="heading-link" href="#10-k%e1%ba%bft-lu%e1%ba%adn">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>JavaScript là một ngôn ngữ linh hoạt và mạnh mẽ, được sử dụng rộng rãi trong phát triển web. Với cú pháp đơn giản và dễ học, JavaScript cho phép bạn xây dựng các trang web động và ứng dụng web mạnh mẽ. Việc hiểu rõ các khái niệm cơ bản về cú pháp JavaScript như khai báo biến, cấu trúc điều kiện, vòng lặp, hàm, và mảng sẽ giúp bạn nắm vững cách lập trình trong JavaScript.
+<a href="http://localhost:1313/blog"  class="external-link" target="_blank" rel="noopener">Quay lại</a>
+<a href="http://localhost:1313/blog/11/"  class="external-link" target="_blank" rel="noopener">Chuyển sang bài học tiếp theo</a></p>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2021 -
+    
+    2024
+     Đỗ Thành Đạt 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

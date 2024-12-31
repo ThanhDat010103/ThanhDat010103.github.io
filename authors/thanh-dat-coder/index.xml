@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thanh Dat Coder on blog-thành đạt</title>
+    <link>http://localhost:1313/authors/thanh-dat-coder/</link>
+    <description>Recent content in Thanh Dat Coder on blog-thành đạt</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/authors/thanh-dat-coder/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chủ Đề Học Java và Javascript</title>
+      <link>http://localhost:1313/blog/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/</guid>
+      <description>&lt;p&gt;Chào bạn! Dưới đây là những chủ đề quan trọng trong quá trình học Java và Javascript, giúp bạn hiểu và nắm vững các khái niệm cốt lõi.&lt;/p&gt;&#xA;&lt;h2 id=&#34;bắt-đầu-với-java0&#34;&gt;&#xD;&#xA;  &lt;a href=&#34;0&#34; &gt;&lt;strong&gt;Bắt đầu với Java&lt;/strong&gt;&lt;/a&gt;&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#b%e1%ba%aft-%c4%91%e1%ba%a7u-v%e1%bb%9bi-java0&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;h2 id=&#34;1-java-cơ-bản1&#34;&gt;&#xD;&#xA;  &lt;a href=&#34;1&#34; &gt;1. &lt;strong&gt;Java cơ bản.&lt;/strong&gt;&lt;/a&gt;&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-java-c%c6%a1-b%e1%ba%a3n1&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Bắt đầu với cú pháp cơ bản, kiểu dữ liệu, biến, toán tử và điều kiện. Tìm hiểu cách viết các chương trình đơn giản bằng Java.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dothanhdat</title>
+    <title>blog-thành đạt</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on dothanhdat</description>
+    <description>Recent content on blog-thành đạt</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 26 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Giới thiệu</title>
+      <title>Giới Thiệu</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;Xin chào! Mình là &lt;em&gt;Đỗ Thành Đạt&lt;/em&gt;, một lập trình viên trẻ đầy nhiệt huyết và đam mê với công nghệ. Blog này là nơi mình chia sẻ những kiến thức, kinh nghiệm và hành trình học hỏi trong lĩnh vực phát triển phần mềm.&lt;/p&gt;&#xA;&lt;h3 id=&#34;về-mình&#34;&gt;&#xD;&#xA;  Về mình:&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#v%e1%bb%81-m%c3%acnh&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Mình chuyên làm việc với các ngôn ngữ lập trình như &lt;em&gt;Python&lt;/em&gt;, &lt;em&gt;C#&lt;/em&gt;, và gần đây là &lt;em&gt;Go&lt;/em&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Mình đang tập trung vào phát triển các ứng dụng &lt;em&gt;web&lt;/em&gt; và &lt;em&gt;hệ thống phân tán&lt;/em&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Mục tiêu của mình là trở thành một kỹ sư phần mềm xuất sắc, xây dựng các sản phẩm mang lại giá trị thực tiễn.&lt;/li&gt;&#xA;&lt;li&gt;Ngoài công việc, mình yêu thích chạy bộ và tìm hiểu về cách ứng dụng công nghệ trong đời sống hàng ngày.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;nội-dung-blog&#34;&gt;&#xD;&#xA;  Nội dung blog:&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#n%e1%bb%99i-dung-blog&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;Trên blog này, bạn sẽ tìm thấy:&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;xin-chào-&#34;&gt;&#xD;&#xA;  Xin chào! 👋&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#xin-ch%c3%a0o-&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Mình là &lt;em&gt;Đỗ Thành Đạt&lt;/em&gt;, một lập trình viên trẻ đầy nhiệt huyết và đam mê với công nghệ. Blog này là nơi mình chia sẻ những kiến thức, kinh nghiệm và hành trình học hỏi trong lĩnh vực phát triển phần mềm.&lt;/p&gt;&#xA;&lt;h2 id=&#34;về-mình&#34;&gt;&#xD;&#xA;  Về Mình:&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#v%e1%bb%81-m%c3%acnh&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Mình chuyên làm việc với các ngôn ngữ lập trình như &lt;em&gt;Java&lt;/em&gt;, &lt;em&gt;C#&lt;/em&gt;, và gần đây là &lt;em&gt;NodeJS&lt;/em&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Mình đang tập trung vào phát triển các ứng dụng &lt;em&gt;web&lt;/em&gt; và &lt;em&gt;hệ thống phân tán&lt;/em&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Mục tiêu của mình là trở thành một kỹ sư phần mềm xuất sắc, xây dựng các sản phẩm mang lại giá trị thực tiễn.&lt;/li&gt;&#xA;&lt;li&gt;Ngoài công việc, mình yêu thích chạy bộ và tìm hiểu về cách ứng dụng công nghệ trong đời sống hàng ngày.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;nội-dung-blog&#34;&gt;&#xD;&#xA;  Nội Dung Blog:&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#n%e1%bb%99i-dung-blog&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Trên blog này, bạn sẽ tìm thấy:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Guia de Sintaxe Markdown</title>
@@ -44,11 +44,11 @@
       <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;&#xA;&lt;h2 id=&#34;heading&#34;&gt;&#xD;&#xA;  &#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;</description>
     </item>
     <item>
-      <title>Java</title>
-      <link>http://localhost:1313/blog1/</link>
+      <title>Chủ Đề Học Java và Javascript</title>
+      <link>http://localhost:1313/blog/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog1/</guid>
-      <description>&lt;p&gt;Hugo Coder provides some &lt;em&gt;Custom Shortcodes&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;heading&#34;&gt;&#xD;&#xA;  &#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;</description>
+      <guid>http://localhost:1313/blog/</guid>
+      <description>&lt;p&gt;Chào bạn! Dưới đây là những chủ đề quan trọng trong quá trình học Java và Javascript, giúp bạn hiểu và nắm vững các khái niệm cốt lõi.&lt;/p&gt;&#xA;&lt;h2 id=&#34;bắt-đầu-với-java0&#34;&gt;&#xD;&#xA;  &lt;a href=&#34;0&#34; &gt;&lt;strong&gt;Bắt đầu với Java&lt;/strong&gt;&lt;/a&gt;&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#b%e1%ba%aft-%c4%91%e1%ba%a7u-v%e1%bb%9bi-java0&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;h2 id=&#34;1-java-cơ-bản1&#34;&gt;&#xD;&#xA;  &lt;a href=&#34;1&#34; &gt;1. &lt;strong&gt;Java cơ bản.&lt;/strong&gt;&lt;/a&gt;&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-java-c%c6%a1-b%e1%ba%a3n1&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Bắt đầu với cú pháp cơ bản, kiểu dữ liệu, biến, toán tử và điều kiện. Tìm hiểu cách viết các chương trình đơn giản bằng Java.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mais Conteúdo Rico</title>
@@ -177,39 +177,137 @@
       <description></description>
     </item>
     <item>
-      <title>About</title>
-      <link>http://localhost:1313/about.pt-br/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about.pt-br/</guid>
-      <description>&lt;p&gt;Escrito em Go, Hugo é um gerador de sites estáticos de código aberto disponível sobre a licença &lt;a href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apache Licence 2.0.&lt;/a&gt; O Hugo suporta TOML, YAML e JSON como arquivos de dados, Markdown e HTML como arquivos de conteúdo, e usa shortcodes para adicionar conteúdos ricos. Outras funcionalidades notaveis são taxonomias, modo multilingual, processamento de imagens, formatos de saída customizaveis, minificação de HTML/CSS/JS e suporte a fluxos SASS/SCSS.&lt;/p&gt;&#xA;&lt;p&gt;O Hugo faz o uso de vários projetos de código aberto incluíndo:&lt;/p&gt;</description>
+      <title></title>
+      <link>http://localhost:1313/blog/0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/0/</guid>
+      <description>&lt;h1 id=&#34;cài-đặt-java&#34;&gt;&#xD;&#xA;  Cài đặt Java&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#c%c3%a0i-%c4%91%e1%ba%b7t-java&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Một số máy tính có thể đã cài sẵn Java.&lt;/p&gt;&#xA;&lt;h2 id=&#34;kiểm-tra-java-trên-máy-tính-windows&#34;&gt;&#xD;&#xA;  Kiểm tra Java trên máy tính Windows&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#ki%e1%bb%83m-tra-java-tr%c3%aan-m%c3%a1y-t%c3%adnh-windows&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Để kiểm tra xem bạn đã cài đặt Java trên PC Windows hay chưa, hãy tìm kiếm Java trên thanh bắt đầu hoặc nhập lệnh sau vào Dấu nhắc lệnh (cmd.exe):&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nl&#34;&gt;\Users\Your&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt; Name&amp;gt;java -version&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Nếu Java đã được cài đặt, bạn sẽ thấy thông báo tương tự như thế này (tùy theo phiên bản):&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Contact</title>
-      <link>http://localhost:1313/contact/</link>
+      <title></title>
+      <link>http://localhost:1313/blog/1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Tên:&lt;/strong&gt; Nguyễn Văn A&lt;br&gt;&#xA;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:contact@nguyenvana.com&#34; &gt;contact@nguyenvana.com&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;Số điện thoại:&lt;/strong&gt; (+84) 123-456-789&lt;br&gt;&#xA;&lt;strong&gt;Địa chỉ:&lt;/strong&gt; Số 123, Đường ABC, Quận XYZ, TP.HCM, Việt Nam&lt;br&gt;&#xA;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;https://linkedin.com/in/nguyenvana&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;linkedin.com/in/nguyenvana&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/nguyenvana&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github.com/nguyenvana&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;Facebook:&lt;/strong&gt; &lt;a href=&#34;https://facebook.com/nguyenvana&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;facebook.com/nguyenvana&lt;/a&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/blog/1/</guid>
+      <description>&lt;h1 id=&#34;cú-pháp-java&#34;&gt;&#xD;&#xA;  Cú Pháp Java&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#c%c3%ba-ph%c3%a1p-java&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Java là một ngôn ngữ lập trình mạnh mẽ, phổ biến với cú pháp rõ ràng và dễ hiểu. Trong bài học này, chúng ta sẽ tìm hiểu về các cú pháp cơ bản trong Java, bao gồm các yếu tố như biến, kiểu dữ liệu, câu lệnh điều kiện, vòng lặp và cách viết các phương thức trong Java.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Contato</title>
-      <link>http://localhost:1313/contact/</link>
+      <title></title>
+      <link>http://localhost:1313/blog/10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
-      <description>&lt;p&gt;Me siga em @joaoninguem.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/blog/10/</guid>
+      <description>&lt;h1 id=&#34;cú-pháp-cơ-bản-của-javascript&#34;&gt;&#xD;&#xA;  Cú Pháp Cơ Bản của JavaScript&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#c%c3%ba-ph%c3%a1p-c%c6%a1-b%e1%ba%a3n-c%e1%bb%a7a-javascript&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;JavaScript là một ngôn ngữ lập trình phổ biến được sử dụng rộng rãi trong phát triển web để tạo ra các trang web động và tương tác. Trong bài học này, chúng ta sẽ tìm hiểu cú pháp cơ bản của JavaScript, bao gồm cách khai báo biến, các cấu trúc điều khiển, hàm, và các thao tác cơ bản khác.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Projects</title>
-      <link>http://localhost:1313/projects/</link>
+      <title></title>
+      <link>http://localhost:1313/blog/11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
-      <description>&lt;p&gt;Dưới đây là 3 dự án cụ thể dành cho ngành IT, kèm theo chức năng, lợi ích và hướng dẫn triển khai:&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;1-hệ-thống-quản-lý-nhân-sự-hr-management-system&#34;&gt;&#xD;&#xA;  &lt;strong&gt;1. Hệ thống Quản lý Nhân sự (HR Management System)&lt;/strong&gt;&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-h%e1%bb%87-th%e1%bb%91ng-qu%e1%ba%a3n-l%c3%bd-nh%c3%a2n-s%e1%bb%b1-hr-management-system&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;Chức năng:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Quản lý thông tin nhân viên: thêm, sửa, xóa.&lt;/li&gt;&#xA;&lt;li&gt;Quản lý chấm công và ngày nghỉ.&lt;/li&gt;&#xA;&lt;li&gt;Tính lương tự động dựa trên giờ làm việc và thưởng.&lt;/li&gt;&#xA;&lt;li&gt;Báo cáo: tổng hợp hiệu suất làm việc của nhân viên.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lợi ích:&lt;/strong&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/blog/11/</guid>
+      <description>&lt;h1 id=&#34;lập-trình-hướng-đối-tượng-trong-javascript&#34;&gt;&#xD;&#xA;  Lập Trình Hướng Đối Tượng trong JavaScript&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#l%e1%ba%adp-tr%c3%acnh-h%c6%b0%e1%bb%9bng-%c4%91%e1%bb%91i-t%c6%b0%e1%bb%a3ng-trong-javascript&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Lập trình hướng đối tượng (OOP - Object-Oriented Programming) là một phương pháp lập trình dựa trên các đối tượng, nơi mỗi đối tượng có các thuộc tính (properties) và phương thức (methods). JavaScript là một ngôn ngữ lập trình hỗ trợ lập trình hướng đối tượng, mặc dù cú pháp của nó khác biệt một chút so với các ngôn ngữ lập trình hướng đối tượng khác như Java hoặc C++.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Projetos</title>
-      <link>http://localhost:1313/projects/</link>
+      <title></title>
+      <link>http://localhost:1313/blog/12/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
-      <description>&lt;p&gt;Nada para ver aqui.. Circulando!&lt;/p&gt;</description>
+      <guid>http://localhost:1313/blog/12/</guid>
+      <description>&lt;h1 id=&#34;dom-và-manipulation&#34;&gt;&#xD;&#xA;  DOM và Manipulation&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#dom-v%c3%a0-manipulation&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;DOM (Document Object Model) là một giao diện lập trình ứng dụng (API) đại diện cho cấu trúc tài liệu HTML hoặc XML dưới dạng một cây các đối tượng. JavaScript có thể được sử dụng để thao tác với DOM, cho phép bạn thay đổi nội dung, cấu trúc và kiểu dáng của một trang web một cách động.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/13/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/13/</guid>
+      <description>&lt;h1 id=&#34;asynchronous-javascript&#34;&gt;&#xD;&#xA;  Asynchronous JavaScript&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#asynchronous-javascript&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Trong JavaScript, xử lý bất đồng bộ (asynchronous) cho phép bạn thực thi các tác vụ mà không làm tắc nghẽn (block) các tác vụ khác. Điều này rất quan trọng khi làm việc với các tác vụ mất thời gian như tải dữ liệu từ máy chủ, đọc tệp, hoặc các tác vụ cần phải chờ đợi. JavaScript cung cấp nhiều cách để xử lý bất đồng bộ, bao gồm callbacks, promises, và async/await.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/14/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/14/</guid>
+      <description>&lt;h1 id=&#34;quản-lý-dữ-liệu-với-api-và-fetch&#34;&gt;&#xD;&#xA;  Quản Lý Dữ Liệu với API và Fetch&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#qu%e1%ba%a3n-l%c3%bd-d%e1%bb%af-li%e1%bb%87u-v%e1%bb%9bi-api-v%c3%a0-fetch&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Trong JavaScript, việc tương tác với API (Application Programming Interface) và xử lý dữ liệu từ các dịch vụ web là một phần quan trọng trong phát triển ứng dụng web hiện đại. Một trong những cách phổ biến để thực hiện điều này là sử dụng API kết hợp với &lt;code&gt;fetch()&lt;/code&gt; – một API cho phép bạn thực hiện các yêu cầu HTTP và nhận dữ liệu từ các dịch vụ web.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/15/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/15/</guid>
+      <description>&lt;h1 id=&#34;các-framework-và-thư-viện-javascript&#34;&gt;&#xD;&#xA;  Các Framework và Thư Viện JavaScript&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#c%c3%a1c-framework-v%c3%a0-th%c6%b0-vi%e1%bb%87n-javascript&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;JavaScript có một hệ sinh thái phong phú với nhiều thư viện và framework được phát triển để giúp lập trình viên xây dựng các ứng dụng web hiệu quả hơn. Các framework và thư viện này cung cấp các công cụ mạnh mẽ để giải quyết các vấn đề phổ biến, giảm thiểu công sức viết mã và tăng tốc quá trình phát triển.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2/</guid>
+      <description>&lt;h1 id=&#34;lập-trình-hướng-đối-tượng-trong-java&#34;&gt;&#xD;&#xA;  Lập Trình Hướng Đối Tượng trong Java&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#l%e1%ba%adp-tr%c3%acnh-h%c6%b0%e1%bb%9bng-%c4%91%e1%bb%91i-t%c6%b0%e1%bb%a3ng-trong-java&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Lập trình hướng đối tượng (OOP) là một phong cách lập trình dựa trên các đối tượng và các lớp. Java là một ngôn ngữ lập trình hướng đối tượng, và bạn có thể sử dụng OOP để tổ chức và thiết kế các ứng dụng phức tạp.&lt;/p&gt;&#xA;&lt;h2 id=&#34;các-khái-niệm-cơ-bản-trong-lập-trình-hướng-đối-tượng&#34;&gt;&#xD;&#xA;  Các Khái Niệm Cơ Bản trong Lập Trình Hướng Đối Tượng&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#c%c3%a1c-kh%c3%a1i-ni%e1%bb%87m-c%c6%a1-b%e1%ba%a3n-trong-l%e1%ba%adp-tr%c3%acnh-h%c6%b0%e1%bb%9bng-%c4%91%e1%bb%91i-t%c6%b0%e1%bb%a3ng&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;h3 id=&#34;1-lớp-class&#34;&gt;&#xD;&#xA;  1. Lớp (Class)&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-l%e1%bb%9bp-class&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;Lớp là một khuôn mẫu để tạo ra đối tượng. Nó định nghĩa các thuộc tính (biến) và phương thức (hàm) mà đối tượng của lớp đó có. Ví dụ, lớp &lt;code&gt;Person&lt;/code&gt; có thể có các thuộc tính như tên, tuổi và phương thức như &lt;code&gt;sayHello()&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/3/</guid>
+      <description>&lt;h1 id=&#34;quản-lý-bộ-nhớ-và-garbage-collection-trong-java&#34;&gt;&#xD;&#xA;  Quản Lý Bộ Nhớ và Garbage Collection trong Java&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#qu%e1%ba%a3n-l%c3%bd-b%e1%bb%99-nh%e1%bb%9b-v%c3%a0-garbage-collection-trong-java&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Trong Java, việc quản lý bộ nhớ là một phần quan trọng để đảm bảo rằng chương trình của bạn chạy hiệu quả và không gặp vấn đề về việc sử dụng bộ nhớ không đúng cách. Java sử dụng &lt;strong&gt;Garbage Collection (GC)&lt;/strong&gt;, một cơ chế tự động dọn dẹp bộ nhớ không còn sử dụng nữa, giúp giảm thiểu việc quản lý bộ nhớ thủ công.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/4/</guid>
+      <description>&lt;h1 id=&#34;xử-lý-ngoại-lệ-exception-handling-trong-java&#34;&gt;&#xD;&#xA;  Xử Lý Ngoại Lệ (Exception Handling) trong Java&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#x%e1%bb%ad-l%c3%bd-ngo%e1%ba%a1i-l%e1%bb%87-exception-handling-trong-java&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Trong Java, &lt;strong&gt;Ngoại Lệ (Exception)&lt;/strong&gt; là những sự kiện không mong muốn xảy ra trong quá trình thực thi chương trình, có thể gây ra sự gián đoạn hoặc lỗi trong chương trình. Java cung cấp cơ chế &lt;strong&gt;Xử lý Ngoại Lệ (Exception Handling)&lt;/strong&gt; để giúp chương trình tiếp tục chạy ngay cả khi gặp phải lỗi.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/5/</guid>
+      <description>&lt;h1 id=&#34;java-collections-framework&#34;&gt;&#xD;&#xA;  Java Collections Framework&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#java-collections-framework&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Java &lt;strong&gt;Collections Framework&lt;/strong&gt; là một tập hợp các lớp và giao diện (interfaces) cho phép bạn lưu trữ, truy xuất, và thao tác với dữ liệu trong các cấu trúc dữ liệu khác nhau, như danh sách, tập hợp, và bản đồ. Framework này cung cấp một cách tiếp cận thống nhất để làm việc với các tập hợp dữ liệu trong Java.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/6/</guid>
+      <description>&lt;h1 id=&#34;luồng-threads-và-đa-luồng-multithreading-trong-java&#34;&gt;&#xD;&#xA;  Luồng (Threads) và Đa Luồng (Multithreading) trong Java&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#lu%e1%bb%93ng-threads-v%c3%a0-%c4%91a-lu%e1%bb%93ng-multithreading-trong-java&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Trong lập trình Java, &lt;strong&gt;luồng (thread)&lt;/strong&gt; là một đơn vị thực thi nhỏ nhất mà hệ thống có thể xử lý. Mỗi chương trình Java chạy ít nhất một luồng (luồng chính), nhưng có thể tạo thêm nhiều luồng để xử lý các tác vụ đồng thời. &lt;strong&gt;Đa luồng (multithreading)&lt;/strong&gt; cho phép thực hiện nhiều tác vụ cùng lúc trong một chương trình, làm tăng hiệu suất và phản ứng của ứng dụng, đặc biệt là với các ứng dụng yêu cầu tính toán nặng hoặc xử lý I/O đồng thời.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/7/</guid>
+      <description>&lt;h1 id=&#34;java-inputoutput-io&#34;&gt;&#xD;&#xA;  Java Input/Output (I/O)&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#java-inputoutput-io&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Java cung cấp một bộ API mạnh mẽ để xử lý các thao tác &lt;strong&gt;Input/Output (I/O)&lt;/strong&gt;. I/O trong Java bao gồm các thao tác đọc và ghi dữ liệu từ các nguồn như tệp tin, bộ nhớ, và mạng. Java cung cấp các lớp và giao diện để làm việc với I/O dưới hai hình thức chính: &lt;strong&gt;byte-oriented I/O&lt;/strong&gt; và &lt;strong&gt;character-oriented I/O&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/8/</guid>
+      <description>&lt;h1 id=&#34;lập-trình-mạng-networking-trong-java&#34;&gt;&#xD;&#xA;  Lập Trình Mạng (Networking) trong Java&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#l%e1%ba%adp-tr%c3%acnh-m%e1%ba%a1ng-networking-trong-java&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Lập trình mạng trong Java cho phép các ứng dụng giao tiếp với nhau qua các giao thức mạng như TCP/IP hoặc UDP. Java cung cấp một bộ API mạnh mẽ trong gói &lt;code&gt;java.net&lt;/code&gt; để tạo các ứng dụng mạng, giúp bạn dễ dàng thiết lập các kết nối mạng, gửi và nhận dữ liệu qua mạng.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/9/</guid>
+      <description>&lt;h1 id=&#34;java-database-connectivity-jdbc&#34;&gt;&#xD;&#xA;  Java Database Connectivity (JDBC)&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#java-database-connectivity-jdbc&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;Java Database Connectivity (JDBC)&lt;/strong&gt; là một API trong Java giúp các ứng dụng Java kết nối và thao tác với cơ sở dữ liệu. JDBC cung cấp các phương thức để truy vấn, cập nhật, và thao tác với dữ liệu trong cơ sở dữ liệu như MySQL, PostgreSQL, Oracle, và nhiều hệ quản trị cơ sở dữ liệu khác.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dự Án</title>
+      <link>http://localhost:1313/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/</guid>
+      <description>&lt;h3 id=&#34;1-hệ-thống-quản-lý-nhân-sự-hr-management-system&#34;&gt;&#xD;&#xA;  1. Hệ thống Quản lý Nhân sự (HR Management System)&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-h%e1%bb%87-th%e1%bb%91ng-qu%e1%ba%a3n-l%c3%bd-nh%c3%a2n-s%e1%bb%b1-hr-management-system&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;Chức năng:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Quản lý thông tin nhân viên: thêm, sửa, xóa.&lt;/li&gt;&#xA;&lt;li&gt;Quản lý chấm công và ngày nghỉ.&lt;/li&gt;&#xA;&lt;li&gt;Tính lương tự động dựa trên giờ làm việc và thưởng.&lt;/li&gt;&#xA;&lt;li&gt;Báo cáo: tổng hợp hiệu suất làm việc của nhân viên.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lợi ích:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Tự động hóa quy trình quản lý nhân sự, tiết kiệm thời gian và công sức.&lt;/li&gt;&#xA;&lt;li&gt;Dễ dàng theo dõi hiệu suất và lịch sử công việc của từng nhân viên.&lt;/li&gt;&#xA;&lt;li&gt;Giảm sai sót trong tính toán lương và quản lý dữ liệu.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Hướng dẫn triển khai:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Thành Tựu</title>
+      <link>http://localhost:1313/thanhtuu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thanhtuu/</guid>
+      <description>&lt;h3 id=&#34;1-giải-nhất-cuộc-thi-rung-chuông-vàng-hutech&#34;&gt;&#xD;&#xA;  1. Giải Nhất Cuộc Thi Rung Chuông Vàng Hutech&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-gi%e1%ba%a3i-nh%e1%ba%a5t-cu%e1%bb%99c-thi-rung-chu%c3%b4ng-v%c3%a0ng-hutech&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;Cuộc thi Rung Chuông Vàng là một sự kiện phổ biến tại các trường đại học, trong đó các sinh viên tham gia trả lời các câu hỏi về kiến thức tổng hợp. Bạn đã giành được Giải Nhất trong cuộc thi này tại trường Đại học Hutech, cho thấy khả năng kiến thức đa dạng và tư duy phản xạ xuất sắc trong việc giải quyết các câu hỏi.&#xA;&lt;img src=&#34;http://localhost:1313/images/z6183513223599_1cfc480ba6d1ab9a04deb2ab49120798.jpg&#34; alt=&#34;Hình ảnh minh họa&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Thông Tin Liên Hệ</title>
+      <link>http://localhost:1313/contactme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contactme/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Tên:&lt;/strong&gt; Đỗ Thành Đạt&lt;br&gt;&#xA;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:dothanhdat160@gmail.com&#34; &gt;dothanhdat160@gmail.com&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;Số điện thoại:&lt;/strong&gt; (+84) 375235297&lt;br&gt;&#xA;&lt;strong&gt;Địa chỉ:&lt;/strong&gt; Đường số 23, phường Bình Trưng Tây, Tp. Thủ Đức&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Mạng xã hội:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.facebook.com/thanh.at.692552&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;https://img.icons8.com/ios-filled/50/000000/facebook.png&#34; alt=&#34;Facebook&#34;&gt;&lt;/a&gt;  &lt;a href=&#34;https://www.instagram.com/th_d.0101&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;https://img.icons8.com/ios-filled/50/000000/instagram-new.png&#34; alt=&#34;Instagram&#34;&gt;&lt;/a&gt;  &lt;a href=&#34;https://github.com/ThanhDat010103&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;https://img.icons8.com/ios-filled/50/000000/github.png&#34; alt=&#34;GitHub&#34;&gt;&lt;/a&gt;  &lt;a href=&#34;https://gitlab.com/dattamthuong&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;https://img.icons8.com/ios-filled/50/000000/gitlab.png&#34; alt=&#34;GitLab&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

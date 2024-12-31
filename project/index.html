@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  Dự Án · blog-thành đạt
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Đỗ Thành Đạt">
+<meta name="description" content="
+  1. Hệ thống Quản lý Nhân sự (HR Management System)
+  
+    
+    Link to heading
+  
+
+Chức năng:
+
+Quản lý thông tin nhân viên: thêm, sửa, xóa.
+Quản lý chấm công và ngày nghỉ.
+Tính lương tự động dựa trên giờ làm việc và thưởng.
+Báo cáo: tổng hợp hiệu suất làm việc của nhân viên.
+
+Lợi ích:
+
+Tự động hóa quy trình quản lý nhân sự, tiết kiệm thời gian và công sức.
+Dễ dàng theo dõi hiệu suất và lịch sử công việc của từng nhân viên.
+Giảm sai sót trong tính toán lương và quản lý dữ liệu.
+
+Hướng dẫn triển khai:">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Dự Án">
+  <meta name="twitter:description" content="1. Hệ thống Quản lý Nhân sự (HR Management System)Link to headingChức năng:
+Quản lý thông tin nhân viên: thêm, sửa, xóa. Quản lý chấm công và ngày nghỉ. Tính lương tự động dựa trên giờ làm việc và thưởng. Báo cáo: tổng hợp hiệu suất làm việc của nhân viên. Lợi ích:
+Tự động hóa quy trình quản lý nhân sự, tiết kiệm thời gian và công sức. Dễ dàng theo dõi hiệu suất và lịch sử công việc của từng nhân viên. Giảm sai sót trong tính toán lương và quản lý dữ liệu. Hướng dẫn triển khai:">
+
+<meta property="og:url" content="http://localhost:1313/project/">
+  <meta property="og:site_name" content="blog-thành đạt">
+  <meta property="og:title" content="Dự Án">
+  <meta property="og:description" content="1. Hệ thống Quản lý Nhân sự (HR Management System)Link to headingChức năng:
+Quản lý thông tin nhân viên: thêm, sửa, xóa. Quản lý chấm công và ngày nghỉ. Tính lương tự động dựa trên giờ làm việc và thưởng. Báo cáo: tổng hợp hiệu suất làm việc của nhân viên. Lợi ích:
+Tự động hóa quy trình quản lý nhân sự, tiết kiệm thời gian và công sức. Dễ dàng theo dõi hiệu suất và lịch sử công việc của từng nhân viên. Giảm sai sót trong tính toán lương và quản lý dữ liệu. Hướng dẫn triển khai:">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/project/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      blog-thành đạt
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">Giới thiệu</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/blog/">Bài học</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/project/">Dự án</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/thanhtuu/">Thành Tựu</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contactme/">Liên hệ</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:1313/project/">
+          Dự Án
+        </a>
+      </h1>
+    </header>
+
+    <h3 id="1-hệ-thống-quản-lý-nhân-sự-hr-management-system">
+  1. Hệ thống Quản lý Nhân sự (HR Management System)
+  <a class="heading-link" href="#1-h%e1%bb%87-th%e1%bb%91ng-qu%e1%ba%a3n-l%c3%bd-nh%c3%a2n-s%e1%bb%b1-hr-management-system">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Chức năng:</strong></p>
+<ul>
+<li>Quản lý thông tin nhân viên: thêm, sửa, xóa.</li>
+<li>Quản lý chấm công và ngày nghỉ.</li>
+<li>Tính lương tự động dựa trên giờ làm việc và thưởng.</li>
+<li>Báo cáo: tổng hợp hiệu suất làm việc của nhân viên.</li>
+</ul>
+<p><strong>Lợi ích:</strong></p>
+<ul>
+<li>Tự động hóa quy trình quản lý nhân sự, tiết kiệm thời gian và công sức.</li>
+<li>Dễ dàng theo dõi hiệu suất và lịch sử công việc của từng nhân viên.</li>
+<li>Giảm sai sót trong tính toán lương và quản lý dữ liệu.</li>
+</ul>
+<p><strong>Hướng dẫn triển khai:</strong></p>
+<ul>
+<li><strong>Công nghệ sử dụng:</strong> Frontend: React/Angular; Backend: Spring Boot/ASP.NET Core; Database: MySQL/PostgreSQL.</li>
+<li><strong>Triển khai:</strong> Thiết kế giao diện, xây dựng API, tích hợp công cụ báo cáo.</li>
+<li><strong>Mở rộng:</strong> Thêm tính năng quản lý phúc lợi và hợp đồng lao động.</li>
+</ul>
+<hr>
+<h3 id="2-web-quản-lý-khách-sạn-homestay">
+  2. Web Quản Lý Khách Sạn Homestay
+  <a class="heading-link" href="#2-web-qu%e1%ba%a3n-l%c3%bd-kh%c3%a1ch-s%e1%ba%a1n-homestay">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Chức năng:</strong></p>
+<ul>
+<li>Đăng ký và đăng nhập người dùng (chủ khách sạn, nhân viên, khách hàng).</li>
+<li>Quản lý phòng: danh sách phòng, giá cả, tình trạng phòng, đặt phòng.</li>
+<li>Quản lý đặt phòng và thanh toán trực tuyến.</li>
+<li>Xem thông tin đặt phòng và đánh giá dịch vụ.</li>
+</ul>
+<p><strong>Lợi ích:</strong></p>
+<ul>
+<li>Quản lý dễ dàng thông tin phòng, khách hàng và tình trạng đặt phòng.</li>
+<li>Tạo trải nghiệm người dùng thuận tiện khi đặt phòng trực tuyến.</li>
+<li>Tiết kiệm thời gian và công sức trong việc quản lý khách sạn.</li>
+</ul>
+<p><strong>Hướng dẫn triển khai:</strong></p>
+<ul>
+<li><strong>Công nghệ sử dụng:</strong>
+<ul>
+<li>Frontend: React.js/Angular</li>
+<li>Backend: Node.js (Express)/Django</li>
+<li>Payment Gateway: Stripe/PayPal</li>
+<li>Database: MongoDB/MySQL</li>
+</ul>
+</li>
+<li><strong>Triển khai:</strong> Thiết kế giao diện người dùng, xây dựng API để quản lý phòng, đặt phòng, và thanh toán.</li>
+<li><strong>Mở rộng:</strong> Thêm chức năng đánh giá và phản hồi của khách hàng, hệ thống khuyến mãi cho khách hàng.</li>
+</ul>
+<hr>
+<h3 id="3-web-quản-lý-tiệm-net-internet-cafe-management">
+  3. Web Quản Lý Tiệm Net (Internet Cafe Management)
+  <a class="heading-link" href="#3-web-qu%e1%ba%a3n-l%c3%bd-ti%e1%bb%87m-net-internet-cafe-management">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Chức năng:</strong></p>
+<ul>
+<li>Đăng nhập và quản lý tài khoản người dùng.</li>
+<li>Quản lý máy tính, thời gian sử dụng và tính tiền.</li>
+<li>Quản lý dịch vụ, thanh toán qua cổng trực tuyến.</li>
+<li>Theo dõi lịch sử sử dụng máy tính và báo cáo doanh thu.</li>
+</ul>
+<p><strong>Lợi ích:</strong></p>
+<ul>
+<li>Quản lý việc sử dụng máy tính hiệu quả và tính phí chính xác.</li>
+<li>Cung cấp dịch vụ thanh toán trực tuyến tiện lợi cho khách hàng.</li>
+<li>Theo dõi và tối ưu hóa doanh thu từ việc sử dụng máy tính và dịch vụ.</li>
+</ul>
+<p><strong>Hướng dẫn triển khai:</strong></p>
+<ul>
+<li><strong>Công nghệ sử dụng:</strong>
+<ul>
+<li>Frontend: React.js/Angular</li>
+<li>Backend: Node.js (Express)/Laravel</li>
+<li>Payment Gateway: Stripe/PayPal</li>
+<li>Database: MongoDB/PostgreSQL</li>
+</ul>
+</li>
+<li><strong>Triển khai:</strong> Xây dựng giao diện quản lý máy tính, tích hợp hệ thống tính tiền theo thời gian sử dụng.</li>
+<li><strong>Mở rộng:</strong> Thêm tính năng báo cáo doanh thu, lịch sử sử dụng, và hệ thống khuyến mãi cho khách hàng.</li>
+</ul>
+<hr>
+<h3 id="4-ứng-dụng-bán-giày-shoes-e-commerce-app">
+  4. Ứng Dụng Bán Giày (Shoes E-Commerce App)
+  <a class="heading-link" href="#4-%e1%bb%a9ng-d%e1%bb%a5ng-b%c3%a1n-gi%c3%a0y-shoes-e-commerce-app">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Chức năng:</strong></p>
+<ul>
+<li>Đăng ký và đăng nhập người dùng.</li>
+<li>Quản lý giày: danh sách giày, giá cả, mô tả, hình ảnh.</li>
+<li>Giỏ hàng và thanh toán trực tuyến.</li>
+<li>Theo dõi đơn hàng và đánh giá sản phẩm.</li>
+</ul>
+<p><strong>Lợi ích:</strong></p>
+<ul>
+<li>Mở rộng cơ hội bán giày trực tuyến.</li>
+<li>Tạo trải nghiệm mua sắm dễ dàng và thuận tiện cho khách hàng.</li>
+<li>Quản lý kho hàng và đơn hàng một cách hiệu quả.</li>
+</ul>
+<p><strong>Hướng dẫn triển khai:</strong></p>
+<ul>
+<li><strong>Công nghệ sử dụng:</strong>
+<ul>
+<li>Frontend: React Native/Flutter</li>
+<li>Backend: Node.js (Express)/Django</li>
+<li>Payment Gateway: Stripe/PayPal</li>
+<li>Database: MongoDB/Firebase</li>
+</ul>
+</li>
+<li><strong>Triển khai:</strong> Thiết kế giao diện người dùng cho việc tìm kiếm, đặt hàng và thanh toán giày.</li>
+<li><strong>Mở rộng:</strong> Thêm tính năng khuyến mãi, thanh toán trả góp và hệ thống đánh giá sản phẩm.</li>
+</ul>
+<hr>
+<h3 id="5-web-quản-lý-nhà-hàng-restaurant-management-system">
+  5. Web Quản Lý Nhà Hàng (Restaurant Management System)
+  <a class="heading-link" href="#5-web-qu%e1%ba%a3n-l%c3%bd-nh%c3%a0-h%c3%a0ng-restaurant-management-system">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Chức năng:</strong></p>
+<ul>
+<li>Đăng ký và đăng nhập người dùng (quản lý, nhân viên).</li>
+<li>Quản lý thực đơn: danh sách món ăn, giá cả, mô tả, hình ảnh.</li>
+<li>Quản lý đặt bàn và đơn hàng.</li>
+<li>Thanh toán và theo dõi trạng thái đơn hàng.</li>
+</ul>
+<p><strong>Lợi ích:</strong></p>
+<ul>
+<li>Quản lý dễ dàng thực đơn và đơn hàng.</li>
+<li>Tối ưu hóa quy trình đặt bàn và phục vụ khách hàng.</li>
+<li>Tiết kiệm thời gian và nâng cao hiệu quả hoạt động nhà hàng.</li>
+</ul>
+<p><strong>Hướng dẫn triển khai:</strong></p>
+<ul>
+<li><strong>Công nghệ sử dụng:</strong>
+<ul>
+<li>Frontend: React.js/Angular</li>
+<li>Backend: Node.js (Express)/Django</li>
+<li>Payment Gateway: Stripe/PayPal</li>
+<li>Database: MongoDB/MySQL</li>
+</ul>
+</li>
+<li><strong>Triển khai:</strong> Thiết kế giao diện người dùng cho việc quản lý thực đơn, đặt bàn và thanh toán.</li>
+<li><strong>Mở rộng:</strong> Thêm tính năng báo cáo doanh thu, phân tích xu hướng đặt món và quản lý khuyến mãi.</li>
+</ul>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2021 -
+    
+    2024
+     Đỗ Thành Đạt 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

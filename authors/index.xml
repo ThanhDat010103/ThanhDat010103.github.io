@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors on dothanhdat</title>
+    <title>Authors on blog-thành đạt</title>
     <link>http://localhost:1313/authors/</link>
-    <description>Recent content in Authors on dothanhdat</description>
+    <description>Recent content in Authors on blog-thành đạt</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Đỗ Thành Đạt</title>
+      <link>http://localhost:1313/authors/%C4%91%E1%BB%97-th%C3%A0nh-%C4%91%E1%BA%A1t/</link>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/authors/%C4%91%E1%BB%97-th%C3%A0nh-%C4%91%E1%BA%A1t/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Lone Coder</title>
       <link>http://localhost:1313/authors/lone-coder/</link>
@@ -20,6 +27,13 @@
       <link>http://localhost:1313/authors/programador-solit%C3%A1rio/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/authors/programador-solit%C3%A1rio/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Thanh Dat Coder</title>
+      <link>http://localhost:1313/authors/thanh-dat-coder/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/authors/thanh-dat-coder/</guid>
       <description></description>
     </item>
     <item>

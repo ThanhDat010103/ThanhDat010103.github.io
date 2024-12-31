@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+   · blog-thành đạt
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Đỗ Thành Đạt">
+<meta name="description" content="
+  Asynchronous JavaScript
+  
+    
+    Link to heading
+  
+
+Trong JavaScript, xử lý bất đồng bộ (asynchronous) cho phép bạn thực thi các tác vụ mà không làm tắc nghẽn (block) các tác vụ khác. Điều này rất quan trọng khi làm việc với các tác vụ mất thời gian như tải dữ liệu từ máy chủ, đọc tệp, hoặc các tác vụ cần phải chờ đợi. JavaScript cung cấp nhiều cách để xử lý bất đồng bộ, bao gồm callbacks, promises, và async/await.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="blog-thành đạt">
+  <meta name="twitter:description" content="Asynchronous JavaScriptLink to headingTrong JavaScript, xử lý bất đồng bộ (asynchronous) cho phép bạn thực thi các tác vụ mà không làm tắc nghẽn (block) các tác vụ khác. Điều này rất quan trọng khi làm việc với các tác vụ mất thời gian như tải dữ liệu từ máy chủ, đọc tệp, hoặc các tác vụ cần phải chờ đợi. JavaScript cung cấp nhiều cách để xử lý bất đồng bộ, bao gồm callbacks, promises, và async/await.">
+
+<meta property="og:url" content="http://localhost:1313/blog/13/">
+  <meta property="og:site_name" content="blog-thành đạt">
+  <meta property="og:title" content="blog-thành đạt">
+  <meta property="og:description" content="Asynchronous JavaScriptLink to headingTrong JavaScript, xử lý bất đồng bộ (asynchronous) cho phép bạn thực thi các tác vụ mà không làm tắc nghẽn (block) các tác vụ khác. Điều này rất quan trọng khi làm việc với các tác vụ mất thời gian như tải dữ liệu từ máy chủ, đọc tệp, hoặc các tác vụ cần phải chờ đợi. JavaScript cung cấp nhiều cách để xử lý bất đồng bộ, bao gồm callbacks, promises, và async/await.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/blog/13/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      blog-thành đạt
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">Giới thiệu</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/blog/">Bài học</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/project/">Dự án</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/thanhtuu/">Thành Tựu</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contactme/">Liên hệ</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:1313/blog/13/">
+          
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="asynchronous-javascript">
+  Asynchronous JavaScript
+  <a class="heading-link" href="#asynchronous-javascript">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Trong JavaScript, xử lý bất đồng bộ (asynchronous) cho phép bạn thực thi các tác vụ mà không làm tắc nghẽn (block) các tác vụ khác. Điều này rất quan trọng khi làm việc với các tác vụ mất thời gian như tải dữ liệu từ máy chủ, đọc tệp, hoặc các tác vụ cần phải chờ đợi. JavaScript cung cấp nhiều cách để xử lý bất đồng bộ, bao gồm callbacks, promises, và async/await.</p>
+<h2 id="1-lý-do-cần-asynchronous-javascript">
+  1. Lý Do Cần Asynchronous JavaScript
+  <a class="heading-link" href="#1-l%c3%bd-do-c%e1%ba%a7n-asynchronous-javascript">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>JavaScript hoạt động theo mô hình đơn luồng, có nghĩa là chỉ có thể thực thi một tác vụ tại một thời điểm. Tuy nhiên, trong các ứng dụng web hiện đại, thường có những tác vụ mất thời gian, ví dụ như gọi API từ máy chủ, mà không thể làm gián đoạn luồng xử lý chính.</p>
+<p>Asynchronous JavaScript giúp tránh tình trạng &ldquo;block&rdquo; khi thực thi các tác vụ này, cho phép các tác vụ khác tiếp tục được thực hiện trong khi chờ đợi.</p>
+<h2 id="2-callbacks-hàm-gọi-lại">
+  2. Callbacks (Hàm Gọi Lại)
+  <a class="heading-link" href="#2-callbacks-h%c3%a0m-g%e1%bb%8di-l%e1%ba%a1i">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Callback là một hàm được truyền vào một hàm khác như một đối số và được thực thi khi tác vụ bất đồng bộ hoàn thành. Tuy nhiên, việc sử dụng quá nhiều callbacks có thể dẫn đến &ldquo;callback hell&rdquo;, nơi mã trở nên khó đọc và khó bảo trì.</p>
+<h3 id="21-ví-dụ-về-callbacks">
+  2.1. Ví Dụ về Callbacks
+  <a class="heading-link" href="#21-v%c3%ad-d%e1%bb%a5-v%e1%bb%81-callbacks">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">fetchData</span><span class="p">(</span><span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="s2">&#34;Dữ liệu đã được tải&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">callback</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span> <span class="mi">2000</span><span class="p">);</span> <span class="c1">// Giả lập việc tải dữ liệu mất 2 giây
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">fetchData</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>  <span class="c1">// Output: Dữ liệu đã được tải
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">});</span>
+</span></span></code></pre></div><p>Trong ví dụ trên, <code>fetchData</code> là một hàm bất đồng bộ và khi nó hoàn thành, hàm callback sẽ được gọi.</p>
+<h3 id="22-callback-hell">
+  2.2. Callback Hell
+  <a class="heading-link" href="#22-callback-hell">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Khi bạn có nhiều callback lồng nhau, mã có thể trở nên khó đọc và bảo trì:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">fetchData</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">fetchData</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">data2</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">fetchData</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">data3</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><p>Đây là &ldquo;callback hell&rdquo;, nơi bạn phải lồng nhiều hàm callback, làm cho mã trở nên phức tạp.</p>
+<h2 id="3-promises-lời-hứa">
+  3. Promises (Lời Hứa)
+  <a class="heading-link" href="#3-promises-l%e1%bb%9di-h%e1%bb%a9a">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Promises cung cấp một cách tiếp cận tốt hơn để xử lý bất đồng bộ bằng cách cho phép bạn xử lý kết quả của các tác vụ bất đồng bộ mà không phải sử dụng các callback lồng nhau. Promise đại diện cho một tác vụ bất đồng bộ có thể hoàn thành hoặc thất bại.</p>
+<h3 id="31-cấu-trúc-của-promise">
+  3.1. Cấu Trúc của Promise
+  <a class="heading-link" href="#31-c%e1%ba%a5u-tr%c3%bac-c%e1%bb%a7a-promise">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Một Promise có thể ở một trong ba trạng thái:</p>
+<ul>
+<li><strong>Pending</strong>: Chưa hoàn thành.</li>
+<li><strong>Resolved (Fulfilled)</strong>: Hoàn thành thành công.</li>
+<li><strong>Rejected</strong>: Hoàn thành thất bại.</li>
+</ul>
+<h3 id="32-ví-dụ-về-promise">
+  3.2. Ví Dụ về Promise
+  <a class="heading-link" href="#32-v%c3%ad-d%e1%bb%a5-v%e1%bb%81-promise">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">promise</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">success</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">resolve</span><span class="p">(</span><span class="s2">&#34;Tải dữ liệu thành công&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">reject</span><span class="p">(</span><span class="s2">&#34;Tải dữ liệu thất bại&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">promise</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>  <span class="c1">// Output: Tải dữ liệu thành công
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>   <span class="c1">// Output: Tải dữ liệu thất bại
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">});</span>
+</span></span></code></pre></div><p>Trong ví dụ trên, Promise thực thi một tác vụ bất đồng bộ và sử dụng <code>then</code> để xử lý khi thành công và <code>catch</code> để xử lý khi thất bại.</p>
+<h3 id="33-chaining-promises-liên-kết-promise">
+  3.3. Chaining Promises (Liên kết Promise)
+  <a class="heading-link" href="#33-chaining-promises-li%c3%aan-k%e1%ba%bft-promise">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Bạn có thể liên kết các promise với nhau để xử lý các tác vụ bất đồng bộ theo chuỗi:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">promise</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">resolve</span><span class="p">(</span><span class="s2">&#34;Tải dữ liệu thành công&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">promise</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>  <span class="c1">// Output: Tải dữ liệu thành công
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">return</span> <span class="s2">&#34;Tiến hành xử lý dữ liệu&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>  <span class="c1">// Output: Tiến hành xử lý dữ liệu
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><h2 id="4-asyncawait">
+  4. Async/Await
+  <a class="heading-link" href="#4-asyncawait">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><code>async</code> và <code>await</code> là cú pháp hiện đại được giới thiệu trong ECMAScript 2017 (ES8), giúp xử lý bất đồng bộ dễ dàng hơn và giúp mã của bạn dễ đọc hơn so với việc sử dụng promise hoặc callback.</p>
+<ul>
+<li><strong><code>async</code></strong>: Được sử dụng để khai báo một hàm bất đồng bộ.</li>
+<li><strong><code>await</code></strong>: Được sử dụng trong hàm <code>async</code> để chờ đợi một promise.</li>
+</ul>
+<h3 id="41-ví-dụ-về-asyncawait">
+  4.1. Ví Dụ về Async/Await
+  <a class="heading-link" href="#41-v%c3%ad-d%e1%bb%a5-v%e1%bb%81-asyncawait">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">fetchData</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">promise</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span><span class="s2">&#34;Dữ liệu đã được tải&#34;</span><span class="p">),</span> <span class="mi">2000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">promise</span><span class="p">;</span>  <span class="c1">// Chờ cho promise hoàn thành
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>  <span class="c1">// Output: Dữ liệu đã được tải
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">fetchData</span><span class="p">();</span>
+</span></span></code></pre></div><p>Trong ví dụ trên, hàm <code>fetchData</code> được khai báo là <code>async</code>, và bên trong nó sử dụng <code>await</code> để đợi cho promise hoàn thành trước khi tiếp tục thực thi.</p>
+<h3 id="42-xử-lý-lỗi-với-asyncawait">
+  4.2. Xử Lý Lỗi với Async/Await
+  <a class="heading-link" href="#42-x%e1%bb%ad-l%c3%bd-l%e1%bb%97i-v%e1%bb%9bi-asyncawait">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Bạn có thể sử dụng <code>try/catch</code> để xử lý lỗi trong các hàm bất đồng bộ sử dụng <code>async</code> và <code>await</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">fetchData</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">promise</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">reject</span><span class="p">(</span><span class="s2">&#34;Có lỗi xảy ra&#34;</span><span class="p">),</span> <span class="mi">2000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">promise</span><span class="p">;</span>  <span class="c1">// Chờ cho promise hoàn thành
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>  <span class="c1">// Output: Có lỗi xảy ra
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">fetchData</span><span class="p">();</span>
+</span></span></code></pre></div><h2 id="5-các-phương-thức-hữu-ích-khi-làm-việc-với-asynchronous-javascript">
+  5. Các Phương Thức Hữu Ích Khi Làm Việc Với Asynchronous JavaScript
+  <a class="heading-link" href="#5-c%c3%a1c-ph%c6%b0%c6%a1ng-th%e1%bb%a9c-h%e1%bb%afu-%c3%adch-khi-l%c3%a0m-vi%e1%bb%87c-v%e1%bb%9bi-asynchronous-javascript">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="51-promiseall">
+  5.1. <code>Promise.all()</code>
+  <a class="heading-link" href="#51-promiseall">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><code>Promise.all()</code> giúp thực thi nhiều promise cùng một lúc và chỉ trả về kết quả khi tất cả các promise đều hoàn thành thành công.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">promise1</span> <span class="o">=</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="s2">&#34;Dữ liệu 1&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">promise2</span> <span class="o">=</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="s2">&#34;Dữ liệu 2&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">promise3</span> <span class="o">=</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="s2">&#34;Dữ liệu 3&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">Promise</span><span class="p">.</span><span class="nx">all</span><span class="p">([</span><span class="nx">promise1</span><span class="p">,</span> <span class="nx">promise2</span><span class="p">,</span> <span class="nx">promise3</span><span class="p">]).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">values</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">values</span><span class="p">);</span>  <span class="c1">// Output: [&#34;Dữ liệu 1&#34;, &#34;Dữ liệu 2&#34;, &#34;Dữ liệu 3&#34;]
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">});</span>
+</span></span></code></pre></div><h3 id="52-promiserace">
+  5.2. <code>Promise.race()</code>
+  <a class="heading-link" href="#52-promiserace">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><code>Promise.race()</code> giúp trả về kết quả của promise nào hoàn thành trước tiên.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">promise1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">setTimeout</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="s2">&#34;Dữ liệu 1&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">promise2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">setTimeout</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="s2">&#34;Dữ liệu 2&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">Promise</span><span class="p">.</span><span class="nx">race</span><span class="p">([</span><span class="nx">promise1</span><span class="p">,</span> <span class="nx">promise2</span><span class="p">]).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>  <span class="c1">// Output: Dữ liệu 2
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">});</span>
+</span></span></code></pre></div><h2 id="6-kết-luận">
+  6. Kết Luận
+  <a class="heading-link" href="#6-k%e1%ba%bft-lu%e1%ba%adn">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Asynchronous JavaScript là một phần quan trọng trong việc phát triển các ứng dụng web hiện đại. Việc sử dụng các phương thức như callbacks, promises, và async/await giúp bạn xử lý các tác vụ bất đồng bộ một cách hiệu quả và dễ dàng.</p>
+<ul>
+<li><strong>Callbacks</strong>: Được sử dụng để thực thi một hàm sau khi tác vụ bất đồng bộ hoàn thành.</li>
+<li><strong>Promises</strong>: Cung cấp một cách tiếp cận dễ đọc hơn cho việc xử lý bất đồng bộ và tránh callback hell.</li>
+<li><strong>Async/Await</strong>: Cú pháp hiện đại giúp mã bất đồng bộ trở nên dễ đọc và dễ hiểu hơn.</li>
+</ul>
+<p>Bằng cách sử dụng các kỹ thuật này, bạn có thể viết mã JavaScript bất đồng bộ mà không gặp phải các vấn đề về hiệu suất hay bảo trì.
+<a href="http://localhost:1313/blog"  class="external-link" target="_blank" rel="noopener">Quay lại</a>
+<a href="http://localhost:1313/blog/14/"  class="external-link" target="_blank" rel="noopener">Chuyển sang bài học tiếp theo</a></p>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2021 -
+    
+    2024
+     Đỗ Thành Đạt 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
